@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "title": "🚑 Ambulance 24/7 Maroc | Transport de malades | Urgences médicales – Casablanca",
+    "description": "Service d'ambulance disponible 24h/24 à Casablanca et dans tout le Maroc. Transport de malades, urgences médicales, accompagnement hospitalier. Appelez maintenant !",
+    "keywords": "ambulance maroc, ambulance casablanca, transport malade maroc, service ambulance privé, ambulance privée nuit casablanca, transport dialyse maroc"
+  },
+  "common": {
+    "callNow": "Appelez maintenant",
+    "callUs": "Contactez-nous",
+    "whatsapp": "WhatsApp",
+    "available247": "Disponible 24/7",
+    "phone": "+212-XXX-XXXXXX",
+    "learnMore": "En savoir plus",
+    "sendMessage": "Envoyer un message",
+    "home": "Accueil",
+    "services": "Services",
+    "contact": "Contact",
+    "blog": "Blog",
+    "cities": "Villes",
+    "allRightsReserved": "Tous droits réservés"
+  },
+  "hero": {
+    "title": "Service d'ambulance disponible 24h/24 et 7j/7",
+    "subtitle": "Transport de malades sécurisé et rapide dans tout le Maroc. Ambulances équipées, équipe médicale professionnelle.",
+    "cta": "Appelez maintenant – Urgence médicale",
+    "badge": "Plus de 10 000 interventions réussies"
+  },
+  "services": {
+    "title": "Nos services",
+    "subtitle": "Nous offrons des services d'ambulance complets et variés pour répondre à tous vos besoins",
+    "transport": {
+      "title": "Transport de malades",
+      "description": "Transport sécurisé des patients entre hôpitaux, domicile et centres de santé avec des véhicules équipés du matériel médical le plus récent.",
+      "features": ["Transport inter-hospitalier", "Transport domicile-hôpital", "Transport pour dialyse", "Transport pour rendez-vous médicaux"]
+    },
+    "emergency": {
+      "title": "Urgences médicales",
+      "description": "Service d'urgence médicale disponible 24/7 avec une équipe médicale qualifiée et des ambulances entièrement équipées.",
+      "features": ["Intervention en 15 minutes", "Équipe médicale professionnelle", "Équipements de réanimation", "Disponible jour et nuit"]
+    },
+    "escort": {
+      "title": "Accompagnement hospitalier",
+      "description": "Accompagnement médical professionnel des patients avec confort et sécurité pendant le transport.",
+      "features": ["Accompagnement médical spécialisé", "Soins pendant le transport", "Coordination avec l'hôpital", "Confort et sécurité"]
+    }
+  },
+  "coverage": {
+    "title": "Villes couvertes",
+    "subtitle": "Notre service d'ambulance couvre les principales villes du Maroc",
+    "cities": {
+      "casablanca": "Casablanca",
+      "rabat": "Rabat",
+      "marrakech": "Marrakech",
+      "fes": "Fès",
+      "tanger": "Tanger"
+    }
+  },
+  "trust": {
+    "title": "Pourquoi nous choisir ?",
+    "badge1": "Agréé Ministère de la Santé",
+    "badge2": "Disponible 24h/24 – 7j/7",
+    "badge3": "+10 000 interventions réussies",
+    "badge4": "Équipe médicale qualifiée"
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "q1": "Comment appeler une ambulance ?",
+    "a1": "Appelez notre numéro ou envoyez un message WhatsApp. Nous arrivons en moins de 15 minutes en ville.",
+    "q2": "Le service est-il disponible la nuit ?",
+    "a2": "Oui, notre service d'ambulance est disponible 24h/24, 7j/7, y compris les jours fériés.",
+    "q3": "Combien coûte le transport de malades ?",
+    "a3": "Le prix varie selon la distance et le type de service. Appelez-nous pour un devis gratuit.",
+    "q4": "Vos ambulances sont-elles équipées ?",
+    "a4": "Oui, toutes nos ambulances sont équipées du matériel médical et de réanimation le plus récent.",
+    "q5": "Transportez-vous les patients en dialyse ?",
+    "a5": "Oui, nous proposons un service spécialisé pour le transport régulier des patients en dialyse.",
+    "q6": "Quelles zones couvrez-vous ?",
+    "a6": "Nous couvrons Casablanca, Rabat, Marrakech, Fès, Tanger et toutes les grandes villes du Maroc.",
+    "q7": "Acceptez-vous l'assurance maladie ?",
+    "a7": "Oui, nous travaillons avec la plupart des compagnies d'assurance maladie. Contactez-nous pour vérifier votre couverture."
+  },
+  "reviews": {
+    "title": "Avis de nos clients",
+    "review1": {
+      "name": "Mohamed B.",
+      "text": "Service excellent ! Ils sont arrivés rapidement et étaient très professionnels. Merci !",
+      "rating": 5
+    },
+    "review2": {
+      "name": "Fatima Z.",
+      "text": "Ils ont transporté mon père à l'hôpital en toute sécurité. Merci infiniment.",
+      "rating": 5
+    },
+    "review3": {
+      "name": "Ahmed M.",
+      "text": "Excellent service de transport dialyse. Toujours à l'heure. Très professionnels !",
+      "rating": 5
+    }
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Vous avez une question ou souhaitez demander une ambulance ? Appelez-nous !",
+    "name": "Nom complet",
+    "email": "Email",
+    "phone": "Téléphone",
+    "message": "Message",
+    "send": "Envoyer",
+    "address": "Casablanca, Maroc",
+    "success": "Votre message a été envoyé avec succès !"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Articles et informations utiles sur les services d'ambulance et la santé au Maroc",
+    "readMore": "Lire la suite",
+    "post1": {
+      "title": "Comment appeler une ambulance au Maroc ?",
+      "excerpt": "Guide complet pour savoir comment appeler une ambulance au Maroc, les numéros importants et ce qu'il faut faire en cas d'urgence.",
+      "slug": "comment-appeler-ambulance-maroc"
+    },
+    "post2": {
+      "title": "Transport dialyse Maroc : tout ce qu'il faut savoir",
+      "excerpt": "Informations importantes sur le transport des patients en dialyse au Maroc. Comment choisir un service de transport sûr et confortable.",
+      "slug": "transport-dialyse-maroc"
+    },
+    "post3": {
+      "title": "Ambulance privée au Maroc : services et tarifs",
+      "excerpt": "Tout ce que vous devez savoir sur les services d'ambulance privée au Maroc, les tarifs et la couverture géographique.",
+      "slug": "ambulance-privee-maroc-services-tarifs"
+    }
+  },
+  "city": {
+    "heroTitle": "Service d'ambulance à {city}",
+    "heroSubtitle": "Urgences médicales et transport de malades à {city} et environs. Disponible 24/7.",
+    "servicesTitle": "Nos services à {city}",
+    "coverageTitle": "Couverture à {city} et environs",
+    "ctaTitle": "Besoin d'une ambulance à {city} ?"
+  }
+}

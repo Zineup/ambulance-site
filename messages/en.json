@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "title": "🚑 Ambulance 24/7 Morocco | Patient Transport | Emergency Medical – Casablanca",
+    "description": "Ambulance service available 24/7 in Casablanca and all of Morocco. Patient transport, emergency medical, hospital escort. Call now!",
+    "keywords": "ambulance morocco, ambulance casablanca, patient transport morocco, private ambulance service, emergency ambulance casablanca"
+  },
+  "common": {
+    "callNow": "Call Now",
+    "callUs": "Call Us",
+    "whatsapp": "WhatsApp",
+    "available247": "Available 24/7",
+    "phone": "+212-XXX-XXXXXX",
+    "learnMore": "Learn More",
+    "sendMessage": "Send Message",
+    "home": "Home",
+    "services": "Services",
+    "contact": "Contact",
+    "blog": "Blog",
+    "cities": "Cities",
+    "allRightsReserved": "All rights reserved"
+  },
+  "hero": {
+    "title": "Ambulance Service Available 24 Hours a Day",
+    "subtitle": "Safe and fast patient transport across Morocco. Fully equipped ambulances and professional medical team.",
+    "cta": "Call Now – Medical Emergency",
+    "badge": "Over 10,000 successful interventions"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "We offer comprehensive ambulance services to meet all your needs",
+    "transport": {
+      "title": "Patient Transport",
+      "description": "Safe patient transport between hospitals, homes, and health centers with vehicles equipped with the latest medical equipment.",
+      "features": ["Inter-hospital transport", "Home-hospital transport", "Dialysis transport", "Medical appointment transport"]
+    },
+    "emergency": {
+      "title": "Emergency Medical",
+      "description": "Emergency medical service available 24/7 with a qualified medical team and fully equipped ambulances.",
+      "features": ["15-minute response time", "Professional medical team", "Advanced resuscitation equipment", "Available day and night"]
+    },
+    "escort": {
+      "title": "Hospital Escort",
+      "description": "Professional medical escort for patients with comfort and safety during transport.",
+      "features": ["Specialized medical escort", "Care during transport", "Hospital coordination", "Comfort and safety"]
+    }
+  },
+  "coverage": {
+    "title": "Cities We Cover",
+    "subtitle": "Our ambulance service covers the major cities of Morocco",
+    "cities": {
+      "casablanca": "Casablanca",
+      "rabat": "Rabat",
+      "marrakech": "Marrakech",
+      "fes": "Fes",
+      "tanger": "Tangier"
+    }
+  },
+  "trust": {
+    "title": "Why Choose Us?",
+    "badge1": "Ministry of Health Licensed",
+    "badge2": "Available 24/7",
+    "badge3": "+10,000 Successful Interventions",
+    "badge4": "Qualified Medical Team"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "q1": "How do I call an ambulance?",
+    "a1": "Call our number or send a WhatsApp message. We arrive in less than 15 minutes within the city.",
+    "q2": "Is the service available at night?",
+    "a2": "Yes, our ambulance service is available 24 hours a day, 7 days a week, including holidays.",
+    "q3": "How much does patient transport cost?",
+    "a3": "The price varies depending on distance and type of service. Call us for a free estimate.",
+    "q4": "Are your ambulances equipped?",
+    "a4": "Yes, all our ambulances are equipped with the latest medical and resuscitation equipment.",
+    "q5": "Do you transport dialysis patients?",
+    "a5": "Yes, we offer a specialized service for regular transport of dialysis patients.",
+    "q6": "What areas do you cover?",
+    "a6": "We cover Casablanca, Rabat, Marrakech, Fes, Tangier, and all major Moroccan cities.",
+    "q7": "Do you accept health insurance?",
+    "a7": "Yes, we work with most health insurance companies. Contact us to verify your coverage."
+  },
+  "reviews": {
+    "title": "What Our Clients Say",
+    "review1": {
+      "name": "Mohamed B.",
+      "text": "Excellent service! They arrived quickly and were very professional. Thank you!",
+      "rating": 5
+    },
+    "review2": {
+      "name": "Fatima Z.",
+      "text": "They transported my father to the hospital safely. Thank you so much.",
+      "rating": 5
+    },
+    "review3": {
+      "name": "Ahmed M.",
+      "text": "Excellent dialysis transport service. Always on time. Very professional!",
+      "rating": 5
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Have a question or need an ambulance? Call us now!",
+    "name": "Full Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "send": "Send",
+    "address": "Casablanca, Morocco",
+    "success": "Your message has been sent successfully!"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Useful articles and information about ambulance services and health in Morocco",
+    "readMore": "Read More",
+    "post1": {
+      "title": "How to Call an Ambulance in Morocco?",
+      "excerpt": "Complete guide on how to call an ambulance in Morocco, important numbers, and what to do in an emergency.",
+      "slug": "how-to-call-ambulance-morocco"
+    },
+    "post2": {
+      "title": "Dialysis Transport Morocco: Everything You Need to Know",
+      "excerpt": "Important information about transporting dialysis patients in Morocco. How to choose a safe and comfortable transport service.",
+      "slug": "dialysis-transport-morocco"
+    },
+    "post3": {
+      "title": "Private Ambulance in Morocco: Services and Prices",
+      "excerpt": "Everything you need to know about private ambulance services in Morocco, prices, and geographic coverage.",
+      "slug": "private-ambulance-morocco-services-prices"
+    }
+  },
+  "city": {
+    "heroTitle": "Ambulance Service in {city}",
+    "heroSubtitle": "Emergency medical and patient transport in {city} and surrounding areas. Available 24/7.",
+    "servicesTitle": "Our Services in {city}",
+    "coverageTitle": "Coverage in {city} and Surrounding Areas",
+    "ctaTitle": "Need an Ambulance in {city}?"
+  }
+}

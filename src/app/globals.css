@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply text-dark bg-white;
+  }
+
+  [dir="rtl"] {
+    font-family: "Noto Sans Arabic", "Tahoma", "Arial", sans-serif;
+  }
+
+  [dir="ltr"] {
+    font-family: "Inter", "Noto Sans Arabic", sans-serif;
+  }
+}
+
+@layer components {
+  .btn-urgent {
+    @apply bg-urgent hover:bg-urgent-dark text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl active:scale-95;
+  }
+
+  .btn-medical {
+    @apply bg-medical hover:bg-medical-dark text-white font-bold py-3 px-6 rounded-lg transition-all duration-200;
+  }
+
+  .container-page {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-12 md:py-20;
+  }
+}
+
+/* Floating phone button animation */
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+.pulse-ring::before {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  border-radius: 50%;
+  background: rgba(230, 57, 70, 0.4);
+  animation: pulse-ring 1.5s ease-out infinite;
+}
+
+/* WhatsApp button animation */
+@keyframes bounce-gentle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+.whatsapp-bounce {
+  animation: bounce-gentle 2s ease-in-out infinite;
+}

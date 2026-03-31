@@ -1,0 +1,81 @@
+export const SITE_CONFIG = {
+  name: "Ambulance Maroc",
+  nameAr: "إسعاف المغرب",
+  phone: "+212-XXX-XXXXXX",
+  phoneClean: "+212XXXXXXXXX",
+  whatsapp: "+212XXXXXXXXX",
+  email: "contact@ambulance-maroc.ma",
+  url: "https://ambulance-maroc.ma",
+  address: {
+    street: "Boulevard Mohamed V",
+    city: "Casablanca",
+    country: "Morocco",
+    zip: "20000",
+  },
+  social: {
+    facebook: "https://facebook.com/ambulancemaroc",
+    instagram: "https://instagram.com/ambulancemaroc",
+  },
+};
+
+export const CITIES = [
+  {
+    slug: "casablanca",
+    nameAr: "الدار البيضاء",
+    nameFr: "Casablanca",
+    nameEn: "Casablanca",
+    nameMa: "كازا",
+    lat: 33.5731,
+    lng: -7.5898,
+    neighborhoods: [
+      "المعاريف",
+      "عين الشق",
+      "أنفا",
+      "سيدي بنور",
+      "الحي المحمدي",
+      "مرس السلطان",
+    ],
+  },
+  {
+    slug: "rabat",
+    nameAr: "الرباط",
+    nameFr: "Rabat",
+    nameEn: "Rabat",
+    nameMa: "الرباط",
+    lat: 34.0209,
+    lng: -6.8416,
+    neighborhoods: ["أكدال", "حسان", "السويسي", "يعقوب المنصور", "المدينة القديمة"],
+  },
+  {
+    slug: "marrakech",
+    nameAr: "مراكش",
+    nameFr: "Marrakech",
+    nameEn: "Marrakech",
+    nameMa: "مراكش",
+    lat: 31.6295,
+    lng: -7.9811,
+    neighborhoods: ["جليز", "المدينة", "حي المسيرة", "النخيل", "المنارة"],
+  },
+  {
+    slug: "fes",
+    nameAr: "فاس",
+    nameFr: "Fès",
+    nameEn: "Fes",
+    nameMa: "فاس",
+    lat: 34.0331,
+    lng: -5.0003,
+    neighborhoods: ["فاس الجديد", "المدينة القديمة", "عين شقف", "سايس", "مرجان"],
+  },
+  {
+    slug: "tanger",
+    nameAr: "طنجة",
+    nameFr: "Tanger",
+    nameEn: "Tangier",
+    nameMa: "طنجة",
+    lat: 35.7595,
+    lng: -5.834,
+    neighborhoods: ["المدينة القديمة", "مرشان", "بني مكادة", "السواني", "حي البرانص"],
+  },
+] as const;
+
+export type City = (typeof CITIES)[number];
