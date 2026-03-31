@@ -17,21 +17,21 @@ const blogContent: Record<string, Record<string, { title: string; content: strin
         "خدمة الإسعاف ديالنا كتغطي كازا، الرباط، مراكش، فاس، طنجة وكل المدن الكبرى فالمغرب.",
       ],
     },
-    "nakl-marda-ghasil-kola": {
-      title: "نقل مرضى غسيل الكلى: كل ما خاصك تعرف",
+    "nakl-marda-bayn-lmodon": {
+      title: "نقل المرضى بين المدن فالمغرب: كل ما خاصك تعرف",
       content: [
-        "مرضى غسيل الكلى (الدياليز) محتاجين نقل منتظم للمستشفى أو المركز الصحي. خدمة النقل ديالنا مصممة باش توفر الراحة والأمان لهاد المرضى.",
-        "كنوفرو نقل منتظم 3 مرات فالأسبوع أو حسب البرنامج ديال المريض. السيارات ديالنا مجهزة باش تناسب احتياجات مرضى غسيل الكلى.",
-        "الفريق ديالنا مدرب على التعامل مع مرضى غسيل الكلى بعناية. كنهتمو بالراحة ديال المريض من المنزل للمركز الصحي والعكس.",
-        "الأسعار ديالنا معقولة ومناسبة للنقل المنتظم. كنتعاملو مع أغلب شركات التأمين الصحي. اتصل بنا باش ناعطيوك تقدير مجاني.",
-        "خدمة نقل مرضى غسيل الكلى متوفرة فكازا، الرباط، مراكش وكل المدن الكبرى.",
+        "نقل المرضى بين المدن المغربية خاصو يكون آمن ومريح. خدمة النقل ديالنا مصممة باش توفر أحسن رعاية خلال التنقل.",
+        "كنوفرو نقل بين كل المدن المغربية الكبرى بسيارات إسعاف مجهزة بالكامل. المسافة ما كتفرقش، كنوصلو المريض بأمان.",
+        "الفريق ديالنا مدرب على التعامل مع المرضى بعناية خلال السفر الطويل. كنهتمو بالراحة ديال المريض من البداية للنهاية.",
+        "الأسعار ديالنا معقولة ومناسبة. كنتعاملو مع أغلب شركات التأمين الصحي. اتصل بنا باش ناعطيوك تقدير مجاني.",
+        "خدمة النقل بين المدن متوفرة 24/7 فكل أنحاء المغرب.",
       ],
     },
     "ambulance-privee-maroc-khadamat": {
       title: "Ambulance privée فالمغرب: الخدمات والأسعار",
       content: [
         "خدمة الإسعاف الخاص فالمغرب كتوفر حل سريع ومحترف لنقل المرضى والطوارئ الطبية. هنا غادي نشرحو ليكم كل شي على هاد الخدمة.",
-        "الخدمات اللي كنقدمو: نقل المرضى بين المستشفيات، إسعاف مستعجل 24/7، مرافقة طبية للمرضى، نقل لغسيل الكلى، نقل للمواعيد الطبية.",
+        "الخدمات اللي كنقدمو: نقل المرضى بين المستشفيات، إسعاف مستعجل 24/7، مرافقة طبية للمرضى، نقل بين المدن، نقل للمواعيد الطبية.",
         "الأسعار كتختلف حسب: المسافة (داخل المدينة أو بين المدن)، نوع الخدمة (عادي أو مستعجل)، المعدات الطبية المطلوبة.",
         "سيارات الإسعاف ديالنا مرخصة من وزارة الصحة ومجهزة بأحدث المعدات. الفريق الطبي ديالنا مؤهل ومحترف.",
         "للحصول على تقدير مجاني، اتصل بنا أو صيفط لنا رسالة واتساب. كنجاوبو 24 ساعة فـ 24.",
@@ -53,21 +53,21 @@ blogContent.fr = {
       "Notre service d'ambulance couvre Casablanca, Rabat, Marrakech, Fès, Tanger et toutes les grandes villes du Maroc.",
     ],
   },
-  "transport-dialyse-maroc": {
-    title: "Transport dialyse Maroc : tout ce qu'il faut savoir",
+  "transport-malades-interurbain-maroc": {
+    title: "Transport de malades entre villes au Maroc : tout ce qu'il faut savoir",
     content: [
-      "Les patients en dialyse nécessitent un transport régulier vers l'hôpital ou le centre de santé. Notre service est conçu pour offrir confort et sécurité.",
-      "Nous proposons un transport régulier 3 fois par semaine ou selon le programme du patient. Nos véhicules sont adaptés aux besoins des patients dialysés.",
-      "Notre équipe est formée pour prendre soin des patients en dialyse avec attention. Nous assurons le confort du patient du domicile au centre et retour.",
-      "Nos tarifs sont raisonnables et adaptés au transport régulier. Nous travaillons avec la plupart des compagnies d'assurance. Appelez pour un devis gratuit.",
-      "Le transport dialyse est disponible à Casablanca, Rabat, Marrakech et toutes les grandes villes.",
+      "Le transport de patients entre les villes marocaines nécessite un service fiable et sécurisé. Notre service est conçu pour offrir confort et sécurité sur toutes les distances.",
+      "Nous proposons un transport interurbain avec des ambulances entièrement équipées. Nos véhicules sont adaptés aux longs trajets et au confort des patients.",
+      "Notre équipe est formée pour prendre soin des patients pendant les trajets longue distance. Nous assurons le confort du patient du départ à l'arrivée.",
+      "Nos tarifs sont raisonnables et transparents. Nous travaillons avec la plupart des compagnies d'assurance. Appelez pour un devis gratuit.",
+      "Le transport interurbain est disponible 24/7 dans tout le Maroc.",
     ],
   },
   "ambulance-privee-maroc-services-tarifs": {
     title: "Ambulance privée au Maroc : services et tarifs",
     content: [
       "L'ambulance privée au Maroc offre une solution rapide et professionnelle pour le transport de patients et les urgences médicales.",
-      "Nos services incluent : transport inter-hospitalier, urgences médicales 24/7, accompagnement médical, transport pour dialyse, transport pour rendez-vous médicaux.",
+      "Nos services incluent : transport inter-hospitalier, urgences médicales 24/7, accompagnement médical, transport interurbain, transport pour rendez-vous médicaux.",
       "Les tarifs varient selon : la distance (intra-urbain ou interurbain), le type de service (standard ou urgence), l'équipement médical nécessaire.",
       "Nos ambulances sont agréées par le Ministère de la Santé et équipées du matériel le plus récent. Notre équipe médicale est qualifiée et professionnelle.",
       "Pour obtenir un devis gratuit, appelez-nous ou envoyez un message WhatsApp. Nous répondons 24h/24.",
@@ -87,21 +87,21 @@ blogContent.en = {
       "Our ambulance service covers Casablanca, Rabat, Marrakech, Fes, Tangier, and all major cities in Morocco.",
     ],
   },
-  "dialysis-transport-morocco": {
-    title: "Dialysis Transport Morocco: Everything You Need to Know",
+  "intercity-patient-transport-morocco": {
+    title: "Intercity Patient Transport in Morocco: Everything You Need to Know",
     content: [
-      "Dialysis patients require regular transport to the hospital or health center. Our service is designed to provide comfort and safety.",
-      "We offer regular transport 3 times per week or according to the patient's schedule. Our vehicles are adapted to dialysis patient needs.",
-      "Our team is trained to care for dialysis patients with attention. We ensure patient comfort from home to the center and back.",
-      "Our rates are reasonable and adapted for regular transport. We work with most insurance companies. Call for a free estimate.",
-      "Dialysis transport is available in Casablanca, Rabat, Marrakech, and all major cities.",
+      "Transporting patients between Moroccan cities requires a reliable and safe service. Our service is designed to provide comfort and safety over all distances.",
+      "We offer intercity transport with fully equipped ambulances. Our vehicles are adapted for long journeys and patient comfort.",
+      "Our team is trained to care for patients during long-distance trips. We ensure patient comfort from departure to arrival.",
+      "Our rates are reasonable and transparent. We work with most insurance companies. Call for a free estimate.",
+      "Intercity transport is available 24/7 across all of Morocco.",
     ],
   },
   "private-ambulance-morocco-services-prices": {
     title: "Private Ambulance in Morocco: Services and Prices",
     content: [
       "Private ambulance service in Morocco provides a fast and professional solution for patient transport and medical emergencies.",
-      "Our services include: inter-hospital transport, 24/7 medical emergencies, medical escort, dialysis transport, medical appointment transport.",
+      "Our services include: inter-hospital transport, 24/7 medical emergencies, medical escort, intercity transport, medical appointment transport.",
       "Prices vary based on: distance (within city or between cities), type of service (standard or emergency), required medical equipment.",
       "Our ambulances are licensed by the Ministry of Health and equipped with the latest equipment. Our medical team is qualified and professional.",
       "For a free estimate, call us or send a WhatsApp message. We respond 24 hours a day.",

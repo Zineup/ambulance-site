@@ -2,7 +2,7 @@
   "meta": {
     "title": "🚑 Ambulance 24/7 Maroc | Transport de malades | Urgences médicales – Casablanca",
     "description": "Service d'ambulance disponible 24h/24 à Casablanca et dans tout le Maroc. Transport de malades, urgences médicales, accompagnement hospitalier. Appelez maintenant !",
-    "keywords": "ambulance maroc, ambulance casablanca, transport malade maroc, service ambulance privé, ambulance privée nuit casablanca, transport dialyse maroc"
+    "keywords": "ambulance maroc, ambulance casablanca, transport malade maroc, service ambulance privé, ambulance privée nuit casablanca, transport malade interurbain maroc"
   },
   "common": {
     "callNow": "Appelez maintenant",
@@ -31,7 +31,7 @@
     "transport": {
       "title": "Transport de malades",
       "description": "Transport sécurisé des patients entre hôpitaux, domicile et centres de santé avec des véhicules équipés du matériel médical le plus récent.",
-      "features": ["Transport inter-hospitalier", "Transport domicile-hôpital", "Transport pour dialyse", "Transport pour rendez-vous médicaux"]
+      "features": ["Transport inter-hospitalier", "Transport domicile-hôpital", "Transport interurbain", "Transport pour rendez-vous médicaux"]
     },
     "emergency": {
       "title": "Urgences médicales",
@@ -72,12 +72,10 @@
     "a3": "Le prix varie selon la distance et le type de service. Appelez-nous pour un devis gratuit.",
     "q4": "Vos ambulances sont-elles équipées ?",
     "a4": "Oui, toutes nos ambulances sont équipées du matériel médical et de réanimation le plus récent.",
-    "q5": "Transportez-vous les patients en dialyse ?",
-    "a5": "Oui, nous proposons un service spécialisé pour le transport régulier des patients en dialyse.",
-    "q6": "Quelles zones couvrez-vous ?",
-    "a6": "Nous couvrons Casablanca, Rabat, Marrakech, Fès, Tanger et toutes les grandes villes du Maroc.",
-    "q7": "Acceptez-vous l'assurance maladie ?",
-    "a7": "Oui, nous travaillons avec la plupart des compagnies d'assurance maladie. Contactez-nous pour vérifier votre couverture."
+    "q5": "Quelles zones couvrez-vous ?",
+    "a5": "Nous couvrons toutes les grandes villes du Maroc et leurs environs.",
+    "q6": "Acceptez-vous l'assurance maladie ?",
+    "a6": "Oui, nous travaillons avec la plupart des compagnies d'assurance maladie. Contactez-nous pour vérifier votre couverture."
   },
   "reviews": {
     "title": "Avis de nos clients",
@@ -93,7 +91,7 @@
     },
     "review3": {
       "name": "Ahmed M.",
-      "text": "Excellent service de transport dialyse. Toujours à l'heure. Très professionnels !",
+      "text": "Service excellent et professionnel. Toujours à l'heure. Merci beaucoup !",
       "rating": 5
     }
   },
@@ -118,9 +116,9 @@
       "slug": "comment-appeler-ambulance-maroc"
     },
     "post2": {
-      "title": "Transport dialyse Maroc : tout ce qu'il faut savoir",
-      "excerpt": "Informations importantes sur le transport des patients en dialyse au Maroc. Comment choisir un service de transport sûr et confortable.",
-      "slug": "transport-dialyse-maroc"
+      "title": "Transport de malades entre villes au Maroc : tout ce qu'il faut savoir",
+      "excerpt": "Informations importantes sur le transport de patients entre les villes au Maroc. Comment choisir un service de transport sûr et confortable.",
+      "slug": "transport-malades-interurbain-maroc"
     },
     "post3": {
       "title": "Ambulance privée au Maroc : services et tarifs",

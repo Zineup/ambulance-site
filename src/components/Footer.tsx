@@ -3,18 +3,16 @@
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { type Locale } from "@/i18n";
-import { SITE_CONFIG, CITIES } from "@/lib/constants";
+import { SITE_CONFIG } from "@/lib/constants";
 
 export default function Footer({ locale }: { locale: Locale }) {
   const t = useTranslations("common");
   const prefix = locale === "ma" ? "" : `/${locale}`;
 
-  const cityNameKey = locale === "fr" ? "nameFr" : locale === "en" ? "nameEn" : "nameAr";
-
   return (
     <footer className="bg-dark text-white">
       <div className="container-page py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
@@ -54,23 +52,6 @@ export default function Footer({ locale }: { locale: Locale }) {
                   {t("blog")}
                 </Link>
               </li>
-            </ul>
-          </div>
-
-          {/* Cities */}
-          <div>
-            <h3 className="text-lg font-bold mb-4">{t("cities")}</h3>
-            <ul className="space-y-2 text-sm">
-              {CITIES.map((city) => (
-                <li key={city.slug}>
-                  <Link
-                    href={`${prefix}/ambulance-${city.slug}`}
-                    className="text-gray-300 hover:text-urgent transition-colors"
-                  >
-                    {city[cityNameKey]}
-                  </Link>
-                </li>
-              ))}
             </ul>
           </div>
 

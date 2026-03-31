@@ -31,7 +31,7 @@
     "transport": {
       "title": "Patient Transport",
       "description": "Safe patient transport between hospitals, homes, and health centers with vehicles equipped with the latest medical equipment.",
-      "features": ["Inter-hospital transport", "Home-hospital transport", "Dialysis transport", "Medical appointment transport"]
+      "features": ["Inter-hospital transport", "Home-hospital transport", "Intercity transport", "Medical appointment transport"]
     },
     "emergency": {
       "title": "Emergency Medical",
@@ -72,12 +72,10 @@
     "a3": "The price varies depending on distance and type of service. Call us for a free estimate.",
     "q4": "Are your ambulances equipped?",
     "a4": "Yes, all our ambulances are equipped with the latest medical and resuscitation equipment.",
-    "q5": "Do you transport dialysis patients?",
-    "a5": "Yes, we offer a specialized service for regular transport of dialysis patients.",
-    "q6": "What areas do you cover?",
-    "a6": "We cover Casablanca, Rabat, Marrakech, Fes, Tangier, and all major Moroccan cities.",
-    "q7": "Do you accept health insurance?",
-    "a7": "Yes, we work with most health insurance companies. Contact us to verify your coverage."
+    "q5": "What areas do you cover?",
+    "a5": "We cover all major Moroccan cities and their surrounding areas.",
+    "q6": "Do you accept health insurance?",
+    "a6": "Yes, we work with most health insurance companies. Contact us to verify your coverage."
   },
   "reviews": {
     "title": "What Our Clients Say",
@@ -93,7 +91,7 @@
     },
     "review3": {
       "name": "Ahmed M.",
-      "text": "Excellent dialysis transport service. Always on time. Very professional!",
+      "text": "Excellent and professional service. Always on time. Thank you so much!",
       "rating": 5
     }
   },
@@ -118,9 +116,9 @@
       "slug": "how-to-call-ambulance-morocco"
     },
     "post2": {
-      "title": "Dialysis Transport Morocco: Everything You Need to Know",
-      "excerpt": "Important information about transporting dialysis patients in Morocco. How to choose a safe and comfortable transport service.",
-      "slug": "dialysis-transport-morocco"
+      "title": "Intercity Patient Transport in Morocco: Everything You Need to Know",
+      "excerpt": "Important information about transporting patients between cities in Morocco. How to choose a safe and comfortable transport service.",
+      "slug": "intercity-patient-transport-morocco"
     },
     "post3": {
       "title": "Private Ambulance in Morocco: Services and Prices",

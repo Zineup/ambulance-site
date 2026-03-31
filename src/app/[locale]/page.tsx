@@ -2,7 +2,6 @@ import { Metadata } from "next";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import HeroSection from "@/components/home/HeroSection";
 import ServicesSection from "@/components/home/ServicesSection";
-import CoverageSection from "@/components/home/CoverageSection";
 import TrustSection from "@/components/home/TrustSection";
 import FAQSection from "@/components/home/FAQSection";
 import ReviewsSection from "@/components/home/ReviewsSection";
@@ -60,7 +59,6 @@ export default async function HomePage({
     { question: t("q4"), answer: t("a4") },
     { question: t("q5"), answer: t("a5") },
     { question: t("q6"), answer: t("a6") },
-    { question: t("q7"), answer: t("a7") },
   ];
 
   return (
@@ -69,7 +67,6 @@ export default async function HomePage({
       <FAQJsonLd faqItems={faqItems} />
       <HeroSection />
       <ServicesSection />
-      <CoverageSection locale={locale} />
       <TrustSection />
       <FAQSection />
       <ReviewsSection />
