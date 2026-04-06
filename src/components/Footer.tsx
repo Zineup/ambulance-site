@@ -3,16 +3,16 @@
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { type Locale } from "@/i18n";
-import { SITE_CONFIG } from "@/lib/constants";
+import { SITE_CONFIG, SERVICES, QUARTIERS_CASABLANCA } from "@/lib/constants";
 
 export default function Footer({ locale }: { locale: Locale }) {
   const t = useTranslations("common");
-  const prefix = locale === "ma" ? "" : `/${locale}`;
+  const prefix = locale === "ar" ? "" : `/${locale}`;
 
   return (
     <footer className="bg-dark text-white">
       <div className="container-page py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
@@ -24,13 +24,10 @@ export default function Footer({ locale }: { locale: Locale }) {
                 ? "Service d'ambulance professionnel disponible 24h/24 et 7j/7 dans tout le Maroc."
                 : locale === "en"
                 ? "Professional ambulance service available 24/7 across Morocco."
-                : "خدمة إسعاف احترافية متوفرة 24 ساعة فـ 24 فكل أنحاء المغرب."}
+                : locale === "ma"
+                ? "خدمة إسعاف احترافية متوفرة 24 ساعة فـ 24 فكل أنحاء المغرب."
+                : "خدمة إسعاف احترافية متاحة على مدار الساعة في جميع أنحاء المغرب."}
             </p>
-          </div>
-
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-lg font-bold mb-4">{t("home")}</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href={`${prefix}/`} className="text-gray-300 hover:text-urgent transition-colors">
@@ -55,6 +52,40 @@ export default function Footer({ locale }: { locale: Locale }) {
             </ul>
           </div>
 
+          {/* Services - Maillage interne */}
+          <div>
+            <h3 className="text-lg font-bold mb-4">{t("ourServices")}</h3>
+            <ul className="space-y-2 text-sm">
+              {SERVICES.map((service) => (
+                <li key={service.slug}>
+                  <Link
+                    href={`${prefix}/services/${service.slug}`}
+                    className="text-gray-300 hover:text-urgent transition-colors"
+                  >
+                    {locale === "fr" ? service.nameFr : locale === "en" ? service.nameEn : locale === "ma" ? service.nameMa : service.nameAr}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Zones d'intervention - Maillage interne */}
+          <div>
+            <h3 className="text-lg font-bold mb-4">{t("villes")}</h3>
+            <ul className="space-y-2 text-sm">
+              {QUARTIERS_CASABLANCA.map((quartier) => (
+                <li key={quartier.slug}>
+                  <Link
+                    href={`${prefix}/villes/${quartier.slug}`}
+                    className="text-gray-300 hover:text-urgent transition-colors"
+                  >
+                    {locale === "fr" ? quartier.nameFr : locale === "en" ? quartier.nameEn : locale === "ma" ? quartier.nameMa : quartier.nameAr}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           {/* Contact Info */}
           <div>
             <h3 className="text-lg font-bold mb-4">{t("contact")}</h3>
@@ -63,7 +94,7 @@ export default function Footer({ locale }: { locale: Locale }) {
                 <svg className="w-4 h-4 text-urgent flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                <a href={`tel:${SITE_CONFIG.phoneClean}`} className="text-gray-300 hover:text-urgent">
+                <a href={`tel:${SITE_CONFIG.phoneClean}`} className="text-gray-300 hover:text-urgent" dir="ltr">
                   {SITE_CONFIG.phone}
                 </a>
               </li>

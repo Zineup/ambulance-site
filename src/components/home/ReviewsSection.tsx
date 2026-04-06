@@ -9,6 +9,9 @@ export default function ReviewsSection() {
     { key: "review1" },
     { key: "review2" },
     { key: "review3" },
+    { key: "review4" },
+    { key: "review5" },
+    { key: "review6" },
   ] as const;
 
   return (
@@ -18,7 +21,7 @@ export default function ReviewsSection() {
           {t("title")}
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {reviews.map(({ key }) => (
             <div
               key={key}

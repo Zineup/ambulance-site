@@ -16,15 +16,15 @@ export default function Header({ locale }: { locale: Locale }) {
   function getLocalePath(targetLocale: string) {
     const segments = pathname.split("/");
     if (locales.includes(segments[1] as Locale)) {
-      segments[1] = targetLocale === "ma" ? "" : targetLocale;
+      segments[1] = targetLocale === "ar" ? "" : targetLocale;
     } else {
-      segments.splice(1, 0, targetLocale === "ma" ? "" : targetLocale);
+      segments.splice(1, 0, targetLocale === "ar" ? "" : targetLocale);
     }
     const path = segments.filter(Boolean).join("/");
     return `/${path}` || "/";
   }
 
-  const prefix = locale === "ma" ? "" : `/${locale}`;
+  const prefix = locale === "ar" ? "" : `/${locale}`;
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md">

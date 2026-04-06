@@ -3,6 +3,7 @@ import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import HeroSection from "@/components/home/HeroSection";
 import ServicesSection from "@/components/home/ServicesSection";
 import TrustSection from "@/components/home/TrustSection";
+import FleetSection from "@/components/home/FleetSection";
 import FAQSection from "@/components/home/FAQSection";
 import ReviewsSection from "@/components/home/ReviewsSection";
 import { MedicalBusinessJsonLd, FAQJsonLd } from "@/components/JsonLd";
@@ -24,7 +25,7 @@ export async function generateMetadata({
       description: t("description"),
       url: SITE_CONFIG.url,
       siteName: SITE_CONFIG.name,
-      locale: locale === "ma" ? "ar_MA" : locale === "ar" ? "ar_SA" : locale === "fr" ? "fr_MA" : "en_US",
+      locale: locale === "ar" ? "ar_SA" : locale === "ma" ? "ar_MA" : locale === "fr" ? "fr_MA" : "en_US",
       type: "website",
     },
     twitter: {
@@ -35,8 +36,8 @@ export async function generateMetadata({
     alternates: {
       canonical: SITE_CONFIG.url,
       languages: {
-        "ar-MA": `${SITE_CONFIG.url}`,
-        ar: `${SITE_CONFIG.url}/ar`,
+        ar: `${SITE_CONFIG.url}`,
+        "ar-MA": `${SITE_CONFIG.url}/ma`,
         fr: `${SITE_CONFIG.url}/fr`,
         en: `${SITE_CONFIG.url}/en`,
       },
@@ -67,6 +68,7 @@ export default async function HomePage({
       <FAQJsonLd faqItems={faqItems} />
       <HeroSection />
       <ServicesSection />
+      <FleetSection />
       <TrustSection />
       <FAQSection />
       <ReviewsSection />
