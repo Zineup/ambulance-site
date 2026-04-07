@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap');
-
 @layer base {
   html {
     scroll-behavior: smooth;
@@ -12,14 +10,6 @@
   body {
     /* Airbnb text color rule: near black #222222, pure white bg */
     @apply text-[#222222] bg-white;
-  }
-
-  [dir="rtl"] {
-    font-family: "Noto Sans Arabic", "Tahoma", "Arial", sans-serif;
-  }
-
-  [dir="ltr"] {
-    font-family: "Inter", "Noto Sans Arabic", sans-serif;
   }
 
   h1, h2, h3, h4, h5, h6 {

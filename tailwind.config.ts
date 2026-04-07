@@ -17,8 +17,8 @@ const config: Config = {
         light: "#f2f2f2", // Airbnb round buttons bg
       },
       fontFamily: {
-        arabic: ["Noto Sans Arabic", "Tahoma", "Arial", "sans-serif"],
-        sans: ["Inter", "Noto Sans Arabic", "sans-serif"],
+        arabic: ["var(--font-arabic)", "Tahoma", "Arial", "sans-serif"],
+        sans: ["var(--font-nunito)", "var(--font-arabic)", "sans-serif"],
       },
     },
   },

@@ -59,17 +59,17 @@ export default function Header({ locale }: { locale: Locale }) {
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-8">
-            <Link href={`${prefix}/`} className="text-[15px] text-[#222222] hover:text-[#6a6a6a] font-medium transition-colors">
+          <nav className="hidden md:flex items-center gap-2">
+            <Link href={`${prefix}/`} className="px-4 py-2 rounded-full text-[15px] text-[#222222] font-semibold hover:bg-gray-100 transition-all">
               {t("home")}
             </Link>
-            <Link href={`${prefix}/services`} className="text-[15px] text-[#222222] hover:text-[#6a6a6a] font-medium transition-colors">
+            <Link href={`${prefix}/services`} className="px-4 py-2 rounded-full text-[15px] text-[#6a6a6a] font-medium hover:bg-gray-100 hover:text-[#222222] transition-all">
               {t("services")}
             </Link>
-            <Link href={`${prefix}/contact`} className="text-[15px] text-[#222222] hover:text-[#6a6a6a] font-medium transition-colors">
+            <Link href={`${prefix}/contact`} className="px-4 py-2 rounded-full text-[15px] text-[#6a6a6a] font-medium hover:bg-gray-100 hover:text-[#222222] transition-all">
               {t("contact")}
             </Link>
-            <Link href={`${prefix}/blog`} className="text-[15px] text-[#222222] hover:text-[#6a6a6a] font-medium transition-colors">
+            <Link href={`${prefix}/blog`} className="px-4 py-2 rounded-full text-[15px] text-[#6a6a6a] font-medium hover:bg-gray-100 hover:text-[#222222] transition-all">
               {t("blog")}
             </Link>
           </nav>
@@ -79,7 +79,7 @@ export default function Header({ locale }: { locale: Locale }) {
             {/* Phone CTA */}
             <a
               href={`tel:${SITE_CONFIG.phoneClean}`}
-              className="hidden sm:flex items-center gap-2 bg-[#f2f2f2] hover:bg-white text-[#222222] text-[15px] font-semibold px-5 py-2.5 rounded-[24px] border border-transparent hover:border-gray-200 transition-all hover:card-shadow-hover"
+              className="hidden sm:flex items-center gap-2 bg-[#ff385c] hover:bg-[#e00b35] text-white text-[15px] font-bold px-6 py-2.5 rounded-full shadow-sm hover:shadow-md transition-all active:scale-95"
             >
               <PhoneIcon />
               <span>{t("callNow")}</span>
@@ -89,71 +89,72 @@ export default function Header({ locale }: { locale: Locale }) {
             <div className="relative">
               <button
                 onClick={() => setLangOpen(!langOpen)}
-                className="flex items-center gap-1.5 px-3 py-2.5 rounded-full hover:bg-[#f2f2f2] text-[15px] font-medium text-[#222222] transition-colors outline-none focus-visible:ring-2 focus-visible:ring-dark"
+                className="flex items-center gap-2 px-3 py-2.5 rounded-full border border-gray-200 hover:shadow-md bg-white text-[15px] font-medium text-[#222222] transition-all focus:outline-none"
               >
                 <GlobeIcon />
-                <span className="hidden sm:inline-block">{localeNames[locale]}</span>
+                <span className="hidden lg:inline-block font-semibold">{localeNames[locale]}</span>
                 <ChevronIcon open={langOpen} />
               </button>
               {langOpen && (
-                <div className="absolute top-[calc(100%+8px)] end-0 bg-white border border-gray-100 rounded-[16px] shadow-[rgba(0,0,0,0.12)_0px_6px_16px] min-w-[140px] z-50 py-2 overflow-hidden">
+                <div className="absolute top-[calc(100%+12px)] end-0 bg-white rounded-2xl shadow-[0_8px_28px_rgba(0,0,0,0.15)] min-w-[160px] z-50 py-3 overflow-hidden border border-gray-100">
                   {locales.map((l) => (
-                    <Link
+                    <a
                       key={l}
                       href={getLocalePath(l)}
-                      className={`block px-4 py-2.5 text-[15px] transition-colors ${
-                        l === locale ? "font-semibold text-[#222222] bg-[#f8f8f8]" : "text-[#6a6a6a] hover:bg-[#f2f2f2]"
+                      className={`block px-5 py-3 text-[15px] transition-colors ${
+                        l === locale ? "font-bold text-[#222222] bg-gray-50" : "text-[#6a6a6a] hover:bg-gray-50 hover:text-[#222222]"
                       }`}
-                      onClick={() => setLangOpen(false)}
+                      onClick={(e) => {
+                        // Force the Next-intl cookie so the middleware doesn't redirect back
+                        document.cookie = `NEXT_LOCALE=${l}; path=/; max-age=31536000`;
+                        setLangOpen(false);
+                      }}
                     >
                       {localeNames[l]}
-                    </Link>
+                    </a>
                   ))}
                 </div>
               )}
             </div>
 
-            {/* Mobile Hamburger */}
+            {/* Mobile Hamburger Menu (Airbnb Style Pill) */}
             <button
-              className="md:hidden p-2.5 rounded-full hover:bg-[#f2f2f2] text-[#222222] transition-colors"
+              className="md:hidden flex items-center gap-2 p-2.5 pl-3.5 border border-gray-200 rounded-full hover:shadow-md bg-white transition-all focus:outline-none active:scale-95"
               onClick={() => setMenuOpen(!menuOpen)}
               aria-label="Menu"
             >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                {menuOpen ? (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                ) : (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                )}
+              <svg className="w-5 h-5 text-[#222222]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               </svg>
+              <div className="w-8 h-8 rounded-full bg-gray-500 text-white flex items-center justify-center overflow-hidden">
+                <svg className="w-5 h-5 text-white mt-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+              </div>
             </button>
           </div>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Mobile Menu Dropdown */}
         {menuOpen && (
-          <nav className="md:hidden pb-6 border-t border-gray-100 animate-in fade-in slide-in-from-top-4 duration-200">
-            <div className="flex flex-col gap-1 pt-4">
-              <Link href={`${prefix}/`} className="py-3 px-4 text-[16px] text-[#222222] font-medium hover:bg-[#f2f2f2] rounded-[8px]" onClick={() => setMenuOpen(false)}>
+          <div className="md:hidden absolute top-[calc(100%+8px)] left-4 right-4 bg-white rounded-2xl shadow-[0_8px_28px_rgba(0,0,0,0.15)] z-50 overflow-hidden border border-gray-100 animate-in fade-in slide-in-from-top-4 duration-200">
+            <nav className="flex flex-col py-4">
+              <Link href={`${prefix}/`} className="py-3 px-6 text-[#222222] font-semibold hover:bg-gray-50" onClick={() => setMenuOpen(false)}>
                 {t("home")}
               </Link>
-              <Link href={`${prefix}/services`} className="py-3 px-4 text-[16px] text-[#222222] font-medium hover:bg-[#f2f2f2] rounded-[8px]" onClick={() => setMenuOpen(false)}>
+              <Link href={`${prefix}/services`} className="py-3 px-6 text-[#6a6a6a] hover:text-[#222222] hover:bg-gray-50" onClick={() => setMenuOpen(false)}>
                 {t("services")}
               </Link>
-              <Link href={`${prefix}/contact`} className="py-3 px-4 text-[16px] text-[#222222] font-medium hover:bg-[#f2f2f2] rounded-[8px]" onClick={() => setMenuOpen(false)}>
+              <Link href={`${prefix}/contact`} className="py-3 px-6 text-[#6a6a6a] hover:text-[#222222] hover:bg-gray-50" onClick={() => setMenuOpen(false)}>
                 {t("contact")}
               </Link>
-              <Link href={`${prefix}/blog`} className="py-3 px-4 text-[16px] text-[#222222] font-medium hover:bg-[#f2f2f2] rounded-[8px]" onClick={() => setMenuOpen(false)}>
+              <Link href={`${prefix}/blog`} className="py-3 px-6 text-[#6a6a6a] hover:text-[#222222] hover:bg-gray-50" onClick={() => setMenuOpen(false)}>
                 {t("blog")}
               </Link>
-              <a href={`tel:${SITE_CONFIG.phoneClean}`} className="mt-4 mx-4 btn-urgent text-center">
-                <span className="flex items-center justify-center gap-2">
-                  <PhoneIcon />
-                  {t("callNow")}
-                </span>
+              <div className="h-[1px] bg-gray-100 my-2 mx-4"></div>
+              <a href={`tel:${SITE_CONFIG.phoneClean}`} className="mx-6 mt-2 bg-[#ff385c] hover:bg-[#e00b35] text-white py-3 rounded-full text-center font-bold shadow-md transition-all">
+                {t("callNow")}
               </a>
-            </div>
-          </nav>
+            </nav>
+          </div>
         )}
       </div>
     </header>

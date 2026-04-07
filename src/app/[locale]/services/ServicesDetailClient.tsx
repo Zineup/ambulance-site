@@ -66,8 +66,9 @@ export default function ServicesDetailClient({
     );
   }
 
-  // On récupère la clé du service pour next-intl à partir de la structure statique
-  const serviceKey = (service as any).key || (service as any).icon;
+  // Use servicePages namespace for detail content
+  const st = useTranslations("servicePages");
+  const serviceKey = service.slug;
 
   return (
     <div className="bg-[#f8f8f8] section-padding min-h-screen">
@@ -86,13 +87,26 @@ export default function ServicesDetailClient({
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           <div className="lg:col-span-8">
             <div className="bg-white rounded-[24px] p-8 md:p-12 card-shadow mb-8 border border-gray-100">
-              <h1 className="text-[32px] md:text-[40px] font-extrabold text-[#222222] tracking-tight mb-8">
-                {t(`sections.services.${serviceKey}.title`)}
+              <h1 className="text-[32px] md:text-[40px] font-extrabold text-[#222222] tracking-tight mb-4">
+                {st(`${serviceKey}.detailTitle`)}
               </h1>
-              <div 
-                className="prose prose-lg max-w-none prose-headings:text-dark prose-a:text-urgent prose-p:text-[#6a6a6a] leading-relaxed"
-                dangerouslySetInnerHTML={{ __html: t.raw(`sections.services.${serviceKey}.contentHtml`) }}
-              />
+              <p className="text-[18px] text-[#6a6a6a] leading-relaxed mb-8">
+                {st(`${serviceKey}.detailText`)}
+              </p>
+              
+              <h3 className="text-[22px] font-bold text-dark mb-6">Inclus dans ce service :</h3>
+              <ul className="space-y-4">
+                {(st.raw(`${serviceKey}.features`) as string[]).map((feature: string, i: number) => (
+                  <li key={i} className="flex items-start gap-4 p-4 rounded-xl bg-gray-50 border border-gray-100">
+                    <div className="w-6 h-6 rounded-full bg-medical/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <svg className="w-4 h-4 text-medical" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <span className="text-[#222222] font-semibold">{feature}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
 

@@ -5,7 +5,22 @@ import { locales, rtlLocales, type Locale } from "@/i18n";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingCTA from "@/components/FloatingCTA";
+import { Nunito, Noto_Sans_Arabic } from "next/font/google";
 import "@/app/globals.css";
+
+const nunito = Nunito({
+  subsets: ["latin"],
+  variable: "--font-nunito",
+  display: "swap",
+  weight: ["400", "500", "600", "700", "800", "900"],
+});
+
+const arabic = Noto_Sans_Arabic({
+  subsets: ["arabic"],
+  variable: "--font-arabic",
+  display: "swap",
+  weight: ["400", "500", "600", "700", "800", "900"],
+});
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -35,12 +50,14 @@ export default async function LocaleLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
-      <body className="min-h-screen flex flex-col">
+      <body className={`min-h-screen flex flex-col ${nunito.variable} ${arabic.variable} font-sans`} suppressHydrationWarning>
         <NextIntlClientProvider messages={messages}>
-          <Header locale={locale as Locale} />
-          <main className="flex-1">{children}</main>
-          <Footer locale={locale as Locale} />
-          <FloatingCTA />
+          <div className="flex flex-col min-h-screen">
+            <Header locale={locale as Locale} />
+            <main className="flex-1">{children}</main>
+            <Footer locale={locale as Locale} />
+            <FloatingCTA />
+          </div>
         </NextIntlClientProvider>
       </body>
     </html>

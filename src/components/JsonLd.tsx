@@ -1,4 +1,5 @@
 import { SITE_CONFIG } from "@/lib/constants";
+import Script from "next/script";
 
 export function LocalBusinessJsonLd({
   locale,
@@ -48,7 +49,8 @@ export function LocalBusinessJsonLd({
   };
 
   return (
-    <script
+    <Script
+      id={`local-business-${url}`}
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
     />
@@ -112,7 +114,8 @@ export function MedicalBusinessJsonLd({ locale }: { locale: string }) {
   };
 
   return (
-    <script
+    <Script
+      id="medical-business-jsonld"
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
     />
@@ -139,7 +142,8 @@ export function OrganizationJsonLd({ locale }: { locale: string }) {
   };
 
   return (
-    <script
+    <Script
+      id="organization-jsonld"
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
     />
@@ -168,7 +172,8 @@ export function EmergencyServiceJsonLd({ locale }: { locale: string }) {
   };
 
   return (
-    <script
+    <Script
+      id="emergency-service-jsonld"
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
     />
@@ -192,7 +197,8 @@ export function BreadcrumbJsonLd({
   };
 
   return (
-    <script
+    <Script
+      id={`breadcrumb-jsonld-${items.length}`}
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
     />
