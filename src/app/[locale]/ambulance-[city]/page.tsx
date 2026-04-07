@@ -71,11 +71,11 @@ export default async function CityPage({
 
   return (
     <>
-      <MedicalBusinessJsonLd city={cityName} />
+      <MedicalBusinessJsonLd locale={locale} />
       <BreadcrumbJsonLd
         items={[
-          { name: locale === "fr" ? "Accueil" : locale === "en" ? "Home" : "الرئيسية", url: "/" },
-          { name: `Ambulance ${cityName}`, url: `/ambulance-${city.slug}` },
+          { name: locale === "fr" ? "Accueil" : locale === "en" ? "Home" : "الرئيسية", item: `${SITE_CONFIG.url}/` },
+          { name: `Ambulance ${cityName}`, item: `${SITE_CONFIG.url}/ambulance-${city.slug}` },
         ]}
       />
       <CityPageClient citySlug={citySlug} locale={locale} />

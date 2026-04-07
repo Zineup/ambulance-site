@@ -39,11 +39,11 @@ export default async function ContactPage({
   unstable_setRequestLocale(locale);
   return (
     <>
-      <MedicalBusinessJsonLd />
+      <MedicalBusinessJsonLd locale={locale} />
       <BreadcrumbJsonLd
         items={[
-          { name: locale === "fr" ? "Accueil" : locale === "en" ? "Home" : "الرئيسية", url: "/" },
-          { name: locale === "fr" ? "Contact" : locale === "en" ? "Contact" : "اتصل بنا", url: "/contact" },
+          { name: locale === "fr" ? "Accueil" : locale === "en" ? "Home" : "الرئيسية", item: "/" },
+          { name: locale === "fr" ? "Contact" : locale === "en" ? "Contact" : "اتصل بنا", item: "/contact" },
         ]}
       />
       <ContactClient />

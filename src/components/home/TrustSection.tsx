@@ -38,20 +38,20 @@ export default function TrustSection() {
   return (
     <section className="section-padding bg-dark text-white">
       <div className="container-page">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-12">
+        <h2 className="text-[32px] md:text-[40px] font-extrabold text-center mb-16 tracking-[-0.02em] text-white">
           {t("title")}
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-5xl mx-auto">
           {badges.map(({ key, icon, color }) => (
             <div
               key={key}
-              className="text-center p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-white/20 transition-colors"
+              className="text-center p-8 rounded-[20px] bg-white/5 backdrop-blur-md border border-white/10 hover:border-white/20 hover:bg-white/10 transition-all duration-300"
             >
-              <div className={`text-${color} mx-auto mb-4 flex justify-center`}>
+              <div className={`text-${color} mx-auto mb-6 flex justify-center`}>
                 {icon}
               </div>
-              <p className="font-bold text-lg">{t(key)}</p>
+              <p className="font-semibold text-[18px] text-white tracking-wide">{t(key)}</p>
             </div>
           ))}
         </div>

@@ -10,7 +10,8 @@
   }
 
   body {
-    @apply text-dark bg-white;
+    /* Airbnb text color rule: near black #222222, pure white bg */
+    @apply text-[#222222] bg-white;
   }
 
   [dir="rtl"] {
@@ -20,23 +21,39 @@
   [dir="ltr"] {
     font-family: "Inter", "Noto Sans Arabic", sans-serif;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-dark font-bold tracking-tight;
+  }
 }
 
 @layer components {
+  /* Airbnb 3-layer card shadow */
+  .card-shadow {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 0px 0px 1px, rgba(0, 0, 0, 0.04) 0px 2px 6px, rgba(0, 0, 0, 0.1) 0px 4px 8px;
+  }
+  
+  .card-shadow-hover {
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  }
+
   .btn-urgent {
-    @apply bg-urgent hover:bg-urgent-dark text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl active:scale-95;
+    /* Rausch Red style CTA */
+    @apply bg-urgent hover:bg-urgent-dark text-white font-semibold py-3 px-6 rounded-[8px] transition-all duration-200 card-shadow hover:card-shadow-hover active:scale-95;
   }
 
   .btn-medical {
-    @apply bg-medical hover:bg-medical-dark text-white font-bold py-3 px-6 rounded-lg transition-all duration-200;
+    /* Medical Navy CTA */
+    @apply bg-dark hover:bg-opacity-90 text-white font-semibold py-3 px-6 rounded-[8px] transition-all duration-200;
   }
 
   .container-page {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+    @apply max-w-7xl mx-auto px-6 sm:px-8 lg:px-10;
   }
 
   .section-padding {
-    @apply py-12 md:py-20;
+    /* Generous travel-magazine spacing */
+    @apply py-16 md:py-24;
   }
 }
 

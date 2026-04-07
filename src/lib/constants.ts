@@ -1,11 +1,11 @@
 export const SITE_CONFIG = {
-  name: "Ambulance Maroc",
-  nameAr: "إسعاف المغرب",
-  phone: "+212-XXX-XXXXXX",
-  phoneClean: "+212XXXXXXXXX",
-  whatsapp: "+212XXXXXXXXX",
-  email: "contact@ambulance-maroc.ma",
-  url: "https://ambulance-maroc.ma",
+  name: "OK Ambulance",
+  nameAr: "أوكي إسعاف",
+  phone: "+212-696-629854",
+  phoneClean: "+212696629854",
+  whatsapp: "+212696629854",
+  email: "contact@casaambulance.ma",
+  url: "https://casaambulance.ma",
   address: {
     street: "Boulevard Mohamed V",
     city: "Casablanca",
@@ -13,10 +13,11 @@ export const SITE_CONFIG = {
     zip: "20000",
   },
   social: {
-    facebook: "https://facebook.com/ambulancemaroc",
-    instagram: "https://instagram.com/ambulancemaroc",
+    facebook: "https://facebook.com/okambulancecasa",
+    instagram: "https://instagram.com/okambulancecasa",
   },
 };
+
 
 export const SERVICES = [
   {

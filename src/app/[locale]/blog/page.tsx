@@ -41,8 +41,8 @@ export default async function BlogPage({
     <>
       <BreadcrumbJsonLd
         items={[
-          { name: locale === "fr" ? "Accueil" : locale === "en" ? "Home" : "الرئيسية", url: "/" },
-          { name: locale === "fr" ? "Blog" : locale === "en" ? "Blog" : "المدونة", url: "/blog" },
+          { name: locale === "fr" ? "Accueil" : locale === "en" ? "Home" : "الرئيسية", item: "/" },
+          { name: locale === "fr" ? "Blog" : "المدونة", item: "/blog" },
         ]}
       />
       <BlogListClient />

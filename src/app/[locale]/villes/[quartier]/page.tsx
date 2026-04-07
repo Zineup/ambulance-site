@@ -89,12 +89,12 @@ export default async function QuartierPage({
 
   return (
     <>
-      <MedicalBusinessJsonLd city={`${qName}, Casablanca`} />
+      <MedicalBusinessJsonLd locale={locale} />
       <BreadcrumbJsonLd
         items={[
-          { name: locale === "fr" ? "Accueil" : locale === "en" ? "Home" : "الرئيسية", url: "/" },
-          { name: locale === "fr" ? "Villes" : locale === "en" ? "Cities" : "المدن", url: "/villes" },
-          { name: qName, url: `/villes/${quartierSlug}` },
+          { name: locale === "fr" ? "Accueil" : locale === "en" ? "Home" : "الرئيسية", item: "/" },
+          { name: locale === "fr" ? "Zones d'intervention" : locale === "en" ? "Intervention Zones" : "مناطق التدخل", item: "/villes" },
+          { name: `Ambulance ${qName}`, item: `/villes/${quartierSlug}` },
         ]}
       />
 

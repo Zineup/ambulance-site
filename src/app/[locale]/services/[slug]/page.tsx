@@ -89,12 +89,13 @@ export default async function ServiceDetailPage({
 
   return (
     <>
-      <EmergencyServiceJsonLd serviceName={serviceName} serviceSlug={slug} />
+      <MedicalBusinessJsonLd locale={locale} />
+      <EmergencyServiceJsonLd locale={locale} />
       <BreadcrumbJsonLd
         items={[
-          { name: locale === "fr" ? "Accueil" : locale === "en" ? "Home" : "الرئيسية", url: "/" },
-          { name: locale === "fr" ? "Services" : locale === "en" ? "Services" : "الخدمات", url: "/services" },
-          { name: serviceName, url: `/services/${slug}` },
+          { name: locale === "fr" ? "Accueil" : locale === "en" ? "Home" : "الرئيسية", item: "/" },
+          { name: locale === "fr" ? "Services" : locale === "en" ? "Services" : "الخدمات", item: "/services" },
+          { name: serviceName, item: `/services/${slug}` },
         ]}
       />
 
