@@ -3,9 +3,10 @@ import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import HeroSection from "@/components/home/HeroSection";
 import ServicesSection from "@/components/home/ServicesSection";
 import TrustSection from "@/components/home/TrustSection";
+import FleetSection from "@/components/home/FleetSection";
 import FAQSection from "@/components/home/FAQSection";
 import ReviewsSection from "@/components/home/ReviewsSection";
-import { MedicalBusinessJsonLd, FAQJsonLd } from "@/components/JsonLd";
+import { MedicalBusinessJsonLd, EmergencyServiceJsonLd } from "@/components/JsonLd";
 import { SITE_CONFIG } from "@/lib/constants";
 
 export async function generateMetadata({
@@ -13,30 +14,37 @@ export async function generateMetadata({
 }: {
   params: { locale: string };
 }): Promise<Metadata> {
-  const t = await getTranslations({ locale, namespace: "meta" });
+  const t = await getTranslations({ locale, namespace: "metadata" });
+
+  let title = "OK Ambulance Casablanca | Urgence & Transport Médical 24/7";
+  let description = "Besoin d'une ambulance à Casablanca ? OK Ambulance offre un transport médical rapide, sécurisé, 24h/24 et 7j/7 au Maroc.";
+  if (locale === "ma" || locale === "ar") {
+    title = "OK إسعاف الدار البيضاء | طوارئ ونقل طبي 24/7";
+    description = "هل تبحث عن سيارة إسعاف في الدار البيضاء؟ أوكي إسعاف تقدم نقل طبي سريع وآمن على مدار 24 ساعة.";
+  } else if (locale === "en") {
+    title = "OK Ambulance Casablanca | 24/7 Emergency & Medical Transport";
+    description = "Need an ambulance in Casablanca? OK Ambulance provides rapid, secure medical transport 24/7 across Morocco.";
+  }
 
   return {
-    title: t("title"),
-    description: t("description"),
-    keywords: t("keywords"),
+    title,
+    description,
     openGraph: {
-      title: t("title"),
-      description: t("description"),
-      url: SITE_CONFIG.url,
-      siteName: SITE_CONFIG.name,
-      locale: locale === "ma" ? "ar_MA" : locale === "ar" ? "ar_SA" : locale === "fr" ? "fr_MA" : "en_US",
+      title,
+      description,
       type: "website",
+      locale: locale,
     },
     twitter: {
       card: "summary_large_image",
-      title: t("title"),
-      description: t("description"),
+      title: title,
+      description: description,
     },
     alternates: {
       canonical: SITE_CONFIG.url,
       languages: {
-        "ar-MA": `${SITE_CONFIG.url}`,
-        ar: `${SITE_CONFIG.url}/ar`,
+        ar: `${SITE_CONFIG.url}`,
+        "ar-MA": `${SITE_CONFIG.url}/ma`,
         fr: `${SITE_CONFIG.url}/fr`,
         en: `${SITE_CONFIG.url}/en`,
       },
@@ -62,14 +70,15 @@ export default async function HomePage({
   ];
 
   return (
-    <>
-      <MedicalBusinessJsonLd />
-      <FAQJsonLd faqItems={faqItems} />
+    <div className="flex flex-col">
+      <MedicalBusinessJsonLd locale={locale} />
+      <EmergencyServiceJsonLd locale={locale} />
       <HeroSection />
       <ServicesSection />
+      <FleetSection />
       <TrustSection />
       <FAQSection />
       <ReviewsSection />
-    </>
+    </div>
   );
 }

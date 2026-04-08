@@ -48,15 +48,15 @@ export default async function ServicesPage({
 }) {
   unstable_setRequestLocale(locale);
   return (
-    <>
-      <MedicalBusinessJsonLd />
+    <div className="flex flex-col">
+      <MedicalBusinessJsonLd locale={locale} />
       <BreadcrumbJsonLd
         items={[
-          { name: locale === "fr" ? "Accueil" : locale === "en" ? "Home" : "الرئيسية", url: "/" },
-          { name: locale === "fr" ? "Services" : locale === "en" ? "Services" : "الخدمات", url: "/services" },
+          { name: locale === "fr" ? "Accueil" : locale === "en" ? "Home" : "الرئيسية", item: "/" },
+          { name: locale === "fr" ? "Services" : locale === "en" ? "Services" : "الخدمات", item: "/services" },
         ]}
       />
-      <ServicesDetailClient />
-    </>
+      <ServicesDetailClient locale={locale as any} />
+    </div>
   );
 }

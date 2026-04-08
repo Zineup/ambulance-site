@@ -141,15 +141,15 @@ export default async function BlogPostPage({
   const post = blogContent[locale]?.[slug];
 
   return (
-    <>
+    <div className="flex flex-col">
       <BreadcrumbJsonLd
         items={[
-          { name: locale === "fr" ? "Accueil" : locale === "en" ? "Home" : "الرئيسية", url: "/" },
-          { name: locale === "fr" ? "Blog" : "المدونة", url: "/blog" },
-          { name: post?.title || slug, url: `/blog/${slug}` },
+          { name: locale === "fr" ? "Accueil" : locale === "en" ? "Home" : "الرئيسية", item: "/" },
+          { name: locale === "fr" ? "Blog" : locale === "en" ? "Blog" : "المدونة", item: "/blog" },
+          { name: post?.title || slug, item: `/blog/${slug}` },
         ]}
       />
       <BlogPostClient slug={slug} locale={locale} post={post} />
-    </>
+    </div>
   );
 }

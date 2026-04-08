@@ -9,16 +9,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        urgent: "#E63946",
-        "urgent-dark": "#C62828",
-        medical: "#2DC653",
+        urgent: "#E63946", // Rausch Red equivalent for medical
+        "urgent-dark": "#c13515", 
+        medical: "#2DC653", // Keep green for success/positive medical
         "medical-dark": "#1B9E3E",
-        dark: "#1A1A2E",
-        light: "#F8F8F8",
+        dark: "#1D3557", // Medical Navy for text and trust
+        light: "#f2f2f2", // Airbnb round buttons bg
       },
       fontFamily: {
-        arabic: ["Noto Sans Arabic", "Tahoma", "Arial", "sans-serif"],
-        sans: ["Inter", "Noto Sans Arabic", "sans-serif"],
+        arabic: ["var(--font-arabic)", "Tahoma", "Arial", "sans-serif"],
+        sans: ["var(--font-nunito)", "var(--font-arabic)", "sans-serif"],
       },
     },
   },

@@ -17,13 +17,15 @@
     "contact": "Contact",
     "blog": "Blog",
     "cities": "Cities",
-    "allRightsReserved": "All rights reserved"
+    "allRightsReserved": "All rights reserved",
+    "villes": "Service Areas",
+    "ourServices": "Our Services"
   },
   "hero": {
-    "title": "Ambulance Service Available 24 Hours a Day",
-    "subtitle": "Safe and fast patient transport across Morocco. Fully equipped ambulances and professional medical team.",
+    "title": "Ambulance Service Available 24/7 in Casablanca",
+    "subtitle": "Safe and fast patient transport across Morocco. Fast response near the Corniche, Maarif, and Sidi Maarouf. Fully equipped ambulances and professional medical team.",
     "cta": "Call Now – Medical Emergency",
-    "badge": "Over 10,000 successful interventions"
+    "badge": "Over 10,000 successful interventions in Casablanca and Morocco"
   },
   "services": {
     "title": "Our Services",
@@ -31,17 +33,32 @@
     "transport": {
       "title": "Patient Transport",
       "description": "Safe patient transport between hospitals, homes, and health centers with vehicles equipped with the latest medical equipment.",
-      "features": ["Inter-hospital transport", "Home-hospital transport", "Intercity transport", "Medical appointment transport"]
+      "features": [
+        "Inter-hospital transport",
+        "Home-hospital transport",
+        "Intercity transport",
+        "Medical appointment transport"
+      ]
     },
     "emergency": {
       "title": "Emergency Medical",
       "description": "Emergency medical service available 24/7 with a qualified medical team and fully equipped ambulances.",
-      "features": ["15-minute response time", "Professional medical team", "Advanced resuscitation equipment", "Available day and night"]
+      "features": [
+        "15-minute response time",
+        "Professional medical team",
+        "Advanced resuscitation equipment",
+        "Available day and night"
+      ]
     },
     "escort": {
       "title": "Hospital Escort",
       "description": "Professional medical escort for patients with comfort and safety during transport.",
-      "features": ["Specialized medical escort", "Care during transport", "Hospital coordination", "Comfort and safety"]
+      "features": [
+        "Specialized medical escort",
+        "Care during transport",
+        "Hospital coordination",
+        "Comfort and safety"
+      ]
     }
   },
   "coverage": {
@@ -62,6 +79,20 @@
     "badge3": "+10,000 Successful Interventions",
     "badge4": "Qualified Medical Team"
   },
+  "fleet": {
+    "title": "Our Ambulance Fleet",
+    "subtitle": "Modern and fully equipped ambulances ensuring safe and fast transport in Casablanca and across Morocco",
+    "imageAlt": "Equipped ambulance fleet in Casablanca - Ambulance Morocco",
+    "badge1": "Fully equipped ambulances",
+    "badge2": "Modern resuscitation equipment",
+    "badge3": "Regular maintenance and daily disinfection",
+    "feature1Title": "Safety Standards",
+    "feature1Text": "All our ambulances undergo regular safety inspections and are equipped according to international medical standards",
+    "feature2Title": "Advanced Medical Equipment",
+    "feature2Text": "Defibrillators, cardiac monitors, medical oxygen, and comfortable stretchers in every vehicle",
+    "feature3Title": "Fast Response",
+    "feature3Text": "Our ambulances are positioned at strategic points in Casablanca to ensure arrival within 15 minutes"
+  },
   "faq": {
     "title": "Frequently Asked Questions",
     "q1": "How do I call an ambulance?",
@@ -73,7 +104,7 @@
     "q4": "Are your ambulances equipped?",
     "a4": "Yes, all our ambulances are equipped with the latest medical and resuscitation equipment.",
     "q5": "What areas do you cover?",
-    "a5": "We cover all major Moroccan cities and their surrounding areas.",
+    "a5": "We cover all major Moroccan cities and their surrounding areas, including Casablanca, Maarif, Anfa, Sidi Maarouf, and Mohammedia.",
     "q6": "Do you accept health insurance?",
     "a6": "Yes, we work with most health insurance companies. Contact us to verify your coverage."
   },
@@ -92,6 +123,21 @@
     "review3": {
       "name": "Ahmed M.",
       "text": "Excellent and professional service. Always on time. Thank you so much!",
+      "rating": 5
+    },
+    "review4": {
+      "name": "Said H.",
+      "text": "I called them at 3 AM to transport my mother from Maarif to the university hospital. They arrived in just 12 minutes. Very professional team and the ambulance was clean and well-equipped.",
+      "rating": 5
+    },
+    "review5": {
+      "name": "Khadija R.",
+      "text": "The best ambulance service in Casablanca. We used them 3 times to transport my grandfather for dialysis. Always on time and professional.",
+      "rating": 5
+    },
+    "review6": {
+      "name": "Youssef A.",
+      "text": "The driver and nurse were amazing. They treated my sick father with respect and great care. Clean vehicle and modern equipment. Highly recommended.",
       "rating": 5
     }
   },
@@ -132,5 +178,122 @@
     "servicesTitle": "Our Services in {city}",
     "coverageTitle": "Coverage in {city} and Surrounding Areas",
     "ctaTitle": "Need an Ambulance in {city}?"
+  },
+  "servicePages": {
+    "transport-vsl": {
+      "title": "Medical Transport VSL in Casablanca",
+      "subtitle": "Light Medical Transport (VSL) service available 24/7. Comfortable and safe transport for medical appointments and examinations.",
+      "detailTitle": "Medical Transport VSL – Comfortable Patient Transport",
+      "detailText": "We provide Light Medical Transport (VSL) for patients who don't require intensive medical care during the journey. Ideal for medical appointments, regular check-ups, and treatment sessions. Our vehicles are comfortable, clean, and fully equipped.",
+      "features": [
+        "Comfortable transport for medical appointments",
+        "Vehicles cleaned and disinfected daily",
+        "Drivers trained in patient care",
+        "Immediate or scheduled booking",
+        "Competitive and transparent pricing",
+        "Full coverage of Casablanca and surroundings"
+      ],
+      "coverageTitle": "Medical Transport Coverage in Casablanca",
+      "coverageText": "VSL Medical Transport is available in all Casablanca neighborhoods: Maarif, Anfa, Sidi Maarouf, Ain Chock, Hay Hassani, extending to Bouskoura and Mohammedia. Response time under 15 minutes.",
+      "ctaTitle": "Need medical transport in Casablanca?",
+      "ctaText": "Call us now for immediate or scheduled booking. Our team is ready 24/7."
+    },
+    "urgence-reanimation": {
+      "title": "Emergency & Resuscitation in Casablanca",
+      "subtitle": "Emergency medical service with specialized resuscitation team. Fast response within 15 minutes in Casablanca.",
+      "detailTitle": "Emergency & Resuscitation – Specialized Medical Team 24/7",
+      "detailText": "Our emergency and resuscitation service is dedicated to critical cases requiring immediate medical intervention. Ambulances equipped with advanced resuscitation equipment and qualified medical team including doctor and specialized nurse.",
+      "features": [
+        "Complete resuscitation team (doctor + nurse)",
+        "Modern resuscitation and monitoring equipment",
+        "Response in under 15 minutes",
+        "Available 24/7 every day",
+        "Direct coordination with hospitals",
+        "Safe transport of critical cases"
+      ],
+      "coverageTitle": "Emergency Service Coverage in Casablanca",
+      "coverageText": "Our teams are positioned at strategic points in Casablanca: near the Corniche and Ain Diab, Maarif and Anfa, Sidi Maarouf and Hay Hassani. We also cover Bouskoura and Mohammedia.",
+      "ctaTitle": "Medical emergency? Call now!",
+      "ctaText": "Don't wait. Our emergency and resuscitation team is ready to respond in under 15 minutes."
+    },
+    "transport-dialyse": {
+      "title": "Dialysis Transport in Casablanca",
+      "subtitle": "Regular and comfortable transport service for dialysis patients. Weekly scheduling with fixed appointments.",
+      "detailTitle": "Dialysis Transport – Regular and Reliable Service",
+      "detailText": "We understand that dialysis patients need regular and reliable transport. We offer a dedicated transport service with fixed, regular schedules and drivers who know the routes and dialysis centers in Casablanca.",
+      "features": [
+        "Regular transport schedule with fixed times",
+        "Drivers familiar with dialysis centers",
+        "Comfortable and air-conditioned vehicles",
+        "Competitive monthly rates",
+        "Assistance with boarding and alighting",
+        "Coordination with dialysis centers"
+      ],
+      "coverageTitle": "Dialysis Centers Covered in Casablanca",
+      "coverageText": "We transport patients to and from all dialysis centers in Casablanca and Mohammedia. Coverage includes Ibn Rochd University Hospital and dialysis centers in Maarif, Anfa, Sidi Maarouf, and Ain Chock.",
+      "ctaTitle": "Need regular dialysis transport?",
+      "ctaText": "Call us to arrange a comfortable weekly transport schedule at competitive rates."
+    },
+    "rapatriement-sanitaire": {
+      "title": "Medical Repatriation from Casablanca",
+      "subtitle": "National and international medical repatriation service. Safe patient transport between cities and countries.",
+      "detailTitle": "Medical Repatriation – Long-Distance Medical Transport",
+      "detailText": "Our medical repatriation service is dedicated to transporting patients over long distances, whether between Moroccan cities or internationally. Ambulances equipped for long journeys with accompanying medical team.",
+      "features": [
+        "Repatriation between Moroccan cities",
+        "International medical repatriation",
+        "Medical team accompanying throughout the journey",
+        "Vehicles equipped for long distances",
+        "Coordination with receiving hospitals",
+        "Complete insurance and documentation"
+      ],
+      "coverageTitle": "Medical Repatriation Destinations",
+      "coverageText": "Departures from Casablanca to all Moroccan cities: Rabat, Marrakech, Fes, Tangier, Agadir, Oujda. International medical repatriation available on request.",
+      "ctaTitle": "Need medical repatriation?",
+      "ctaText": "Call us to organize safe and comfortable medical repatriation. We handle all the details for you."
+    },
+    "transport-pmr": {
+      "title": "Reduced Mobility Transport in Casablanca",
+      "subtitle": "Adapted vehicles for transporting people with reduced mobility. Ramps and special equipment for total comfort.",
+      "detailTitle": "Reduced Mobility Transport – Complete Adapted Equipment",
+      "detailText": "We offer a dedicated transport service for people with reduced mobility. Our vehicles are equipped with wheelchair ramps, lowered floors, and secure fastening systems. Our team is trained to assist all types of disability with respect and care.",
+      "features": [
+        "Vehicles equipped with wheelchair ramps",
+        "Lowered floors for easy access",
+        "Secure wheelchair fastening systems",
+        "Trained and professional team",
+        "Transport for medical appointments and activities",
+        "Fair and affordable pricing"
+      ],
+      "coverageTitle": "Adapted Transport Coverage in Casablanca",
+      "coverageText": "Reduced mobility transport is available in all Casablanca neighborhoods. We serve Maarif, Anfa, Sidi Maarouf, Ain Chock, Hay Hassani, Bouskoura, and Mohammedia.",
+      "ctaTitle": "Need adapted transport?",
+      "ctaText": "Call us to book an adapted vehicle for people with reduced mobility. Comfort and safety guaranteed."
+    }
+  },
+  "quartierPages": {
+    "heroTitle": "24/7 Ambulance in {quartier} – Casablanca",
+    "heroSubtitle": "Ambulance service available 24/7 in {quartier} and surrounding areas. Fast response within 15 minutes.",
+    "servicesTitle": "Our Services in {quartier}",
+    "serviceAvailable": "Available in {quartier} and surrounding areas",
+    "localTitle": "Ambulance in {quartier}",
+    "localText": "We provide fast and reliable ambulance service in {quartier}, Casablanca. Our teams know the area well and arrive quickly. {landmark}. Whether you need regular medical transport or emergency ambulance, we're here 24/7.",
+    "ctaTitle": "Need an ambulance in {quartier}?",
+    "ctaText": "Call now. Our team in {quartier} is ready to respond in under 15 minutes.",
+    "otherQuartiers": "Other areas in Casablanca"
+  },
+  "footer": {
+    "description": "OK Ambulance is your trusted partner for medical emergencies and safe, rapid patient transport in Casablanca and across Morocco, available 24/7.",
+    "services": "Our Services",
+    "zones": "Coverage Areas",
+    "contact": "Contact Us",
+    "email": "Email",
+    "phone": "Phone",
+    "rights": "All rights reserved."
+  },
+  "metadata": {
+    "title": "🚑 Ambulance 24/7 Morocco | Patient Transport | Emergency Medical – Casablanca",
+    "description": "Ambulance service available 24/7 in Casablanca and all of Morocco. Patient transport, emergency medical, hospital escort. Call now!",
+    "keywords": "ambulance morocco, ambulance casablanca, patient transport morocco, private ambulance service, emergency ambulance casablanca"
   }
 }

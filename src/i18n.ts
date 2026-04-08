@@ -1,9 +1,9 @@
 import { getRequestConfig } from "next-intl/server";
 import { notFound } from "next/navigation";
 
-export const locales = ["ma", "ar", "fr", "en"] as const;
+export const locales = ["ar", "ma", "fr", "en"] as const;
 export type Locale = (typeof locales)[number];
-export const defaultLocale: Locale = "ma";
+export const defaultLocale: Locale = "ar";
 
 export const localeNames: Record<Locale, string> = {
   ma: "الدارجة",
@@ -18,6 +18,7 @@ export default getRequestConfig(async ({ locale }) => {
   if (!locales.includes(locale as Locale)) notFound();
 
   return {
+    locale,
     messages: (await import(`../messages/${locale}.json`)).default,
   };
 });

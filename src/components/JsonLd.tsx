@@ -1,113 +1,200 @@
 import { SITE_CONFIG } from "@/lib/constants";
 
-interface JsonLdProps {
-  city?: string;
-  faqItems?: Array<{ question: string; answer: string }>;
-}
-
-export function MedicalBusinessJsonLd({ city }: { city?: string }) {
-  const schema = {
+export function LocalBusinessJsonLd({
+  locale,
+  name,
+  url,
+  image,
+}: {
+  locale: string;
+  name: string;
+  url: string;
+  image?: string;
+}) {
+  const jsonLd = {
     "@context": "https://schema.org",
-    "@type": ["MedicalBusiness", "LocalBusiness"],
-    name: SITE_CONFIG.name,
-    alternateName: SITE_CONFIG.nameAr,
-    telephone: SITE_CONFIG.phone,
-    email: SITE_CONFIG.email,
-    url: SITE_CONFIG.url,
-    image: `${SITE_CONFIG.url}/images/ambulance-hero.jpg`,
-    openingHoursSpecification: {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: [
-        "Monday", "Tuesday", "Wednesday", "Thursday",
-        "Friday", "Saturday", "Sunday",
-      ],
-      opens: "00:00",
-      closes: "23:59",
-    },
+    "@type": "LocalBusiness",
+    name: name,
+    image: image || `${SITE_CONFIG.url}/favicon.svg`,
+    "@id": url,
+    url: url,
+    telephone: SITE_CONFIG.phoneClean,
     address: {
       "@type": "PostalAddress",
       streetAddress: SITE_CONFIG.address.street,
-      addressLocality: city || SITE_CONFIG.address.city,
-      addressCountry: "MA",
+      addressLocality: SITE_CONFIG.address.city,
       postalCode: SITE_CONFIG.address.zip,
+      addressCountry: "MA",
     },
     geo: {
       "@type": "GeoCoordinates",
       latitude: 33.5731,
       longitude: -7.5898,
     },
-    areaServed: {
-      "@type": "Country",
-      name: "Morocco",
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+      ],
+      opens: "00:00",
+      closes: "23:59",
     },
+  };
+
+  return (
+    <div
+      style={{ display: "none" }}
+      dangerouslySetInnerHTML={{ __html: `<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>` }}
+    />
+  );
+}
+
+export function MedicalBusinessJsonLd({ locale }: { locale: string }) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    name: "OK Ambulance Casablanca",
+    image: `${SITE_CONFIG.url}/favicon.svg`,
+    "@id": SITE_CONFIG.url,
+    url: SITE_CONFIG.url,
+    telephone: SITE_CONFIG.phoneClean,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: SITE_CONFIG.address.street,
+      addressLocality: SITE_CONFIG.address.city,
+      postalCode: SITE_CONFIG.address.zip,
+      addressCountry: "MA",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 33.5731,
+      longitude: -7.5898,
+    },
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+      ],
+      opens: "00:00",
+      closes: "23:59",
+    },
+    priceRange: "$$",
+    medicalSpecialty: [
+      "https://schema.org/Emergency",
+      "https://schema.org/MedicalTransport",
+    ],
     availableService: [
       {
         "@type": "MedicalProcedure",
-        name: "Patient Transport / نقل المرضى",
-        description: "Safe patient transport between hospitals, homes, and health centers",
+        name: "Transport médical d'urgence",
       },
       {
         "@type": "MedicalProcedure",
-        name: "Emergency Medical Transport / إسعاف مستعجل",
-        description: "24/7 emergency ambulance service with qualified medical team",
+        name: "Transport VSL",
       },
       {
         "@type": "MedicalProcedure",
-        name: "Hospital Escort / مرافقة للمستشفى",
-        description: "Professional medical escort for patients",
+        name: "Assistance médicale à domicile",
       },
     ],
-    priceRange: "$$",
-    currenciesAccepted: "MAD",
-    paymentAccepted: "Cash, Credit Card, Insurance",
   };
 
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    <div
+      style={{ display: "none" }}
+      dangerouslySetInnerHTML={{ __html: `<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>` }}
     />
   );
 }
 
-export function FAQJsonLd({ faqItems }: { faqItems: Array<{ question: string; answer: string }> }) {
-  const schema = {
+export function OrganizationJsonLd({ locale }: { locale: string }) {
+  const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqItems.map((item) => ({
-      "@type": "Question",
-      name: item.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: item.answer,
-      },
-    })),
+    "@type": "Organization",
+    name: "OK Ambulance",
+    alternateName: "OK الإسعاف الدار البيضاء",
+    url: SITE_CONFIG.url,
+    logo: `${SITE_CONFIG.url}/favicon.svg`,
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: SITE_CONFIG.phoneClean,
+      contactType: "emergency",
+      contactOption: "TollFree",
+      areaServed: "MA",
+      availableLanguage: ["French", "Arabic", "English"],
+    },
+    sameAs: [SITE_CONFIG.social.facebook, SITE_CONFIG.social.instagram],
   };
 
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    <div
+      style={{ display: "none" }}
+      dangerouslySetInnerHTML={{ __html: `<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>` }}
     />
   );
 }
 
-export function BreadcrumbJsonLd({ items }: { items: Array<{ name: string; url: string }> }) {
-  const schema = {
+export function EmergencyServiceJsonLd({ locale }: { locale: string }) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "EmergencyService",
+    name: "OK Ambulance 24/7 Casablanca",
+    description: "Service d'ambulance privé d'urgence disponible 24h/24 et 7j/7 à Casablanca et au Maroc.",
+    url: SITE_CONFIG.url,
+    telephone: SITE_CONFIG.phoneClean,
+    areaServed: {
+      "@type": "City",
+      name: "Casablanca",
+    },
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: SITE_CONFIG.address.street,
+      addressLocality: SITE_CONFIG.address.city,
+      postalCode: SITE_CONFIG.address.zip,
+      addressCountry: "MA",
+    },
+  };
+
+  return (
+    <div
+      style={{ display: "none" }}
+      dangerouslySetInnerHTML={{ __html: `<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>` }}
+    />
+  );
+}
+
+export function BreadcrumbJsonLd({
+  items,
+}: {
+  items: { name: string; item: string }[];
+}) {
+  const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: items.map((item, index) => ({
       "@type": "ListItem",
       position: index + 1,
       name: item.name,
-      item: `${SITE_CONFIG.url}${item.url}`,
+      item: item.item,
     })),
   };
 
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    <div
+      style={{ display: "none" }}
+      dangerouslySetInnerHTML={{ __html: `<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>` }}
     />
   );
 }
