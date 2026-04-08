@@ -48,7 +48,7 @@ export default async function ServicesPage({
 }) {
   unstable_setRequestLocale(locale);
   return (
-    <>
+    <div className="flex flex-col">
       <MedicalBusinessJsonLd locale={locale} />
       <BreadcrumbJsonLd
         items={[
@@ -57,6 +57,6 @@ export default async function ServicesPage({
         ]}
       />
       <ServicesDetailClient locale={locale as any} />
-    </>
+    </div>
   );
 }

@@ -141,7 +141,7 @@ export default async function BlogPostPage({
   const post = blogContent[locale]?.[slug];
 
   return (
-    <>
+    <div className="flex flex-col">
       <BreadcrumbJsonLd
         items={[
           { name: locale === "fr" ? "Accueil" : locale === "en" ? "Home" : "الرئيسية", item: "/" },
@@ -150,6 +150,6 @@ export default async function BlogPostPage({
         ]}
       />
       <BlogPostClient slug={slug} locale={locale} post={post} />
-    </>
+    </div>
   );
 }

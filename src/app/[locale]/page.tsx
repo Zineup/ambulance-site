@@ -70,7 +70,7 @@ export default async function HomePage({
   ];
 
   return (
-    <>
+    <div className="flex flex-col">
       <MedicalBusinessJsonLd locale={locale} />
       <EmergencyServiceJsonLd locale={locale} />
       <HeroSection />
@@ -79,6 +79,6 @@ export default async function HomePage({
       <TrustSection />
       <FAQSection />
       <ReviewsSection />
-    </>
+    </div>
   );
 }

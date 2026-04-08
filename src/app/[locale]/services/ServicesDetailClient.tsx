@@ -12,6 +12,7 @@ export default function ServicesDetailClient({
   locale: Locale;
 }) {
   const t = useTranslations("services");
+  const st = useTranslations("servicePages");
   const pathname = usePathname();
 
   // On extrait le slug depuis le chemin (ex: /fr/services/transport-vsl)
@@ -66,8 +67,6 @@ export default function ServicesDetailClient({
     );
   }
 
-  // Use servicePages namespace for detail content
-  const st = useTranslations("servicePages");
   const serviceKey = service.slug;
 
   return (

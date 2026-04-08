@@ -70,7 +70,7 @@ export default async function CityPage({
     city.nameAr;
 
   return (
-    <>
+    <div className="flex flex-col">
       <MedicalBusinessJsonLd locale={locale} />
       <BreadcrumbJsonLd
         items={[
@@ -79,6 +79,6 @@ export default async function CityPage({
         ]}
       />
       <CityPageClient citySlug={citySlug} locale={locale} />
-    </>
+    </div>
   );
 }
