@@ -16,14 +16,14 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: "metadata" });
 
-  let title = "OK Ambulance Casablanca | Urgence & Transport Médical 24/7";
-  let description = "Besoin d'une ambulance à Casablanca ? OK Ambulance offre un transport médical rapide, sécurisé, 24h/24 et 7j/7 au Maroc.";
+  let title = "Casa Ambulance - Ambulance Privée Casablanca | Urgence & Transport Médicalisé 24/7";
+  let description = "Besoin d'une ambulance à Casablanca ? Casa Ambulance, ambulance privée disponible 24h/24. Transport médicalisé, SOS ambulance, intervention rapide.";
   if (locale === "ma" || locale === "ar") {
-    title = "OK إسعاف الدار البيضاء | طوارئ ونقل طبي 24/7";
-    description = "هل تبحث عن سيارة إسعاف في الدار البيضاء؟ أوكي إسعاف تقدم نقل طبي سريع وآمن على مدار 24 ساعة.";
+    title = "كازا أمبولونس - سيارة إسعاف خاصة الدار البيضاء | طوارئ ونقل طبي 24/7";
+    description = "هل تبحث عن سيارة إسعاف في الدار البيضاء؟ كازا أمبولونس تقدم نقل طبي سريع وآمن على مدار 24 ساعة.";
   } else if (locale === "en") {
-    title = "OK Ambulance Casablanca | 24/7 Emergency & Medical Transport";
-    description = "Need an ambulance in Casablanca? OK Ambulance provides rapid, secure medical transport 24/7 across Morocco.";
+    title = "Casa Ambulance - Private Ambulance Casablanca | 24/7 Emergency & Medical Transport";
+    description = "Need an ambulance in Casablanca? Casa Ambulance provides rapid, secure private medical transport 24/7 across Morocco.";
   }
 
   return {

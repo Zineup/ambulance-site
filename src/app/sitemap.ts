@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 import { SERVICES, QUARTIERS_CASABLANCA, CITIES } from "@/lib/constants";
 
-const SITE_URL = "https://ambulance-maroc.ma";
+const SITE_URL = "https://casaambulance.ma";
 const locales = ["ar", "ma", "fr", "en"];
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -93,6 +93,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.7,
     });
+  }
+
+  // SEO long-tail pages
+  const seoPages = [
+    "ambulance-privee-casablanca",
+    "transport-medicalise-casablanca",
+    "ambulance-evenementielle",
+    "rapatriement-sanitaire-maroc",
+    "zones-desservies",
+  ];
+  for (const page of seoPages) {
+    for (const locale of locales) {
+      const prefix = locale === "ar" ? "" : `/${locale}`;
+      entries.push({
+        url: `${SITE_URL}${prefix}/${page}`,
+        lastModified: new Date(),
+        changeFrequency: "monthly",
+        priority: 0.8,
+      });
+    }
   }
 
   return entries;

@@ -59,11 +59,13 @@ export function MedicalBusinessJsonLd({ locale }: { locale: string }) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "MedicalBusiness",
-    name: "OK Ambulance Casablanca",
+    name: "Casa Ambulance - Ambulance Privée Casablanca",
+    legalName: "CASA AMBULANCE SARL",
     image: `${SITE_CONFIG.url}/favicon.svg`,
     "@id": SITE_CONFIG.url,
     url: SITE_CONFIG.url,
     telephone: SITE_CONFIG.phoneClean,
+    email: SITE_CONFIG.email,
     address: {
       "@type": "PostalAddress",
       streetAddress: SITE_CONFIG.address.street,
@@ -106,8 +108,24 @@ export function MedicalBusinessJsonLd({ locale }: { locale: string }) {
       },
       {
         "@type": "MedicalProcedure",
-        name: "Assistance médicale à domicile",
+        name: "Transport médicalisé",
       },
+      {
+        "@type": "MedicalProcedure",
+        name: "Rapatriement sanitaire",
+      },
+      {
+        "@type": "MedicalProcedure",
+        name: "Transport dialyse",
+      },
+    ],
+    areaServed: [
+      { "@type": "City", name: "Casablanca" },
+      { "@type": "City", name: "Mohammedia" },
+      { "@type": "City", name: "Bouskoura" },
+      { "@type": "City", name: "Berrechid" },
+      { "@type": "City", name: "Dar Bouazza" },
+      { "@type": "City", name: "Nouaceur" },
     ],
   };
 
@@ -123,8 +141,9 @@ export function OrganizationJsonLd({ locale }: { locale: string }) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "OK Ambulance",
-    alternateName: "OK الإسعاف الدار البيضاء",
+    name: "Casa Ambulance",
+    legalName: "CASA AMBULANCE SARL",
+    alternateName: "كازا أمبولونس",
     url: SITE_CONFIG.url,
     logo: `${SITE_CONFIG.url}/favicon.svg`,
     contactPoint: {
@@ -150,20 +169,46 @@ export function EmergencyServiceJsonLd({ locale }: { locale: string }) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "EmergencyService",
-    name: "OK Ambulance 24/7 Casablanca",
-    description: "Service d'ambulance privé d'urgence disponible 24h/24 et 7j/7 à Casablanca et au Maroc.",
+    name: "Casa Ambulance - Ambulance Privée Casablanca",
+    legalName: "CASA AMBULANCE SARL",
+    description:
+      "Service d'ambulance privée disponible 24h/24 et 7j/7 à Casablanca et environs. Transport médicalisé, urgences, rapatriement sanitaire.",
     url: SITE_CONFIG.url,
     telephone: SITE_CONFIG.phoneClean,
-    areaServed: {
-      "@type": "City",
-      name: "Casablanca",
-    },
+    email: SITE_CONFIG.email,
     address: {
       "@type": "PostalAddress",
       streetAddress: SITE_CONFIG.address.street,
       addressLocality: SITE_CONFIG.address.city,
       postalCode: SITE_CONFIG.address.zip,
       addressCountry: "MA",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 33.5731,
+      longitude: -7.5898,
+    },
+    areaServed: [
+      { "@type": "City", name: "Casablanca" },
+      { "@type": "City", name: "Mohammedia" },
+      { "@type": "City", name: "Bouskoura" },
+      { "@type": "City", name: "Berrechid" },
+      { "@type": "City", name: "Dar Bouazza" },
+      { "@type": "City", name: "Nouaceur" },
+    ],
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+      ],
+      opens: "00:00",
+      closes: "23:59",
     },
   };
 

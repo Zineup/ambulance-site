@@ -45,8 +45,8 @@ export default function Header({ locale }: { locale: Locale }) {
         <div className="flex items-center justify-between h-[80px]">
           {/* Logo */}
           <Link href={`${prefix}/`} className="flex items-center gap-2.5 outline-none focus-visible:ring-2 focus-visible:ring-urgent rounded-lg p-1">
-            <div className="w-10 h-10 bg-dark rounded-[10px] flex items-center justify-center text-white font-bold text-xl leading-none">
-              OK
+            <div className="w-10 h-10 bg-urgent rounded-[10px] flex items-center justify-center text-white font-bold text-sm leading-none">
+              CA
             </div>
             <div className="flex flex-col">
               <span className="text-[17px] font-extrabold text-dark leading-tight tracking-tight">

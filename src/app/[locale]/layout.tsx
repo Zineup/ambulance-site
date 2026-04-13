@@ -24,6 +24,41 @@ const arabic = Noto_Sans_Arabic({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://casaambulance.ma"),
+  title: {
+    default: "Casa Ambulance - Ambulance Privée Casablanca | Transport Médicalisé 24h/24",
+    template: "%s | Casa Ambulance",
+  },
+  description:
+    "Casa Ambulance, ambulance privée à Casablanca. Transport médicalisé, SOS ambulance, urgences médicales 24h/24 7j/7. Intervention rapide à Casablanca, Mohammedia, Bouskoura et environs.",
+  keywords: [
+    "ambulance privée casablanca",
+    "transport médicalisé casablanca",
+    "SOS ambulance casablanca",
+    "ambulance 24h/24",
+    "ambulance Maroc",
+    "Casa Ambulance",
+    "transport sanitaire casablanca",
+    "ambulance urgence casablanca",
+    "rapatriement sanitaire maroc",
+    "ambulance Mohammedia",
+    "ambulance Bouskoura",
+  ],
+  openGraph: {
+    type: "website",
+    locale: "fr_MA",
+    siteName: "Casa Ambulance",
+    title: "Casa Ambulance - Ambulance Privée Casablanca | 24h/24 7j/7",
+    description:
+      "Service d'ambulance privée à Casablanca. Transport médicalisé, urgences, rapatriement sanitaire. Disponible 24h/24 7j/7.",
+    url: "https://casaambulance.ma",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Casa Ambulance - Ambulance Privée Casablanca",
+    description:
+      "Transport médicalisé et ambulance privée 24h/24 à Casablanca. Appelez maintenant !",
+  },
   icons: {
     icon: [
       { url: "/favicon.svg", type: "image/svg+xml" },
@@ -35,8 +70,8 @@ export const metadata: Metadata = {
     "google": "notranslate",
   },
   verification: {
-    google: "aEP_Qsb6aW3lLX7rwSVReQCdzBLKx05SdocMobA5XU8"
-  }
+    google: "aEP_Qsb6aW3lLX7rwSVReQCdzBLKx05SdocMobA5XU8",
+  },
 };
 
 export const viewport: Viewport = {

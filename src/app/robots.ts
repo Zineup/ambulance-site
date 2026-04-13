@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/_next/"],
       },
     ],
-    sitemap: "https://ambulance-maroc.ma/sitemap.xml",
+    sitemap: "https://casaambulance.ma/sitemap.xml",
   };
 }

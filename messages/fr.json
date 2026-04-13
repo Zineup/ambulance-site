@@ -2,7 +2,7 @@
   "meta": {
     "title": "🚑 Ambulance 24/7 Maroc | Transport de malades | Urgences médicales – Casablanca",
     "description": "Service d'ambulance disponible 24h/24 à Casablanca et dans tout le Maroc. Transport de malades, urgences médicales, accompagnement hospitalier. Appelez maintenant !",
-    "keywords": "OK Ambulance, ambulance casablanca, transport malade maroc, service ambulance privé, ambulance privée nuit casablanca, transport malade interurbain maroc"
+    "keywords": "Casa Ambulance, ambulance privée casablanca, transport médicalisé casablanca, SOS ambulance, ambulance 24h/24, transport malade maroc"
   },
   "common": {
     "callNow": "Appelez maintenant",
@@ -82,7 +82,7 @@
   "fleet": {
     "title": "Notre flotte d'ambulances",
     "subtitle": "Ambulances modernes et entièrement équipées pour assurer un transport sûr et rapide à Casablanca et dans tout le Maroc",
-    "imageAlt": "Flotte d'ambulances équipées à Casablanca - OK Ambulance",
+    "imageAlt": "Flotte d'ambulances équipées à Casablanca - Casa Ambulance",
     "badge1": "Ambulances entièrement équipées",
     "badge2": "Équipements de réanimation modernes",
     "badge3": "Maintenance régulière et désinfection quotidienne",
@@ -283,7 +283,7 @@
     "otherQuartiers": "Autres quartiers à Casablanca"
   },
   "footer": {
-    "description": "OK Ambulance est votre partenaire de confiance pour les urgences médicales et le transport sanitaire sûr et rapide à Casablanca et partout au Maroc, disponible 24h/24 et 7j/7.",
+    "description": "Casa Ambulance est votre partenaire de confiance pour les urgences médicales et le transport sanitaire sûr et rapide à Casablanca et partout au Maroc, disponible 24h/24 et 7j/7.",
     "services": "Nos Services",
     "zones": "Zones d'intervention",
     "contact": "Contact",
@@ -294,6 +294,6 @@
   "metadata": {
     "title": "🚑 Ambulance 24/7 Maroc | Transport de malades | Urgences médicales – Casablanca",
     "description": "Service d'ambulance disponible 24h/24 à Casablanca et dans tout le Maroc. Transport de malades, urgences médicales, accompagnement hospitalier. Appelez maintenant !",
-    "keywords": "OK Ambulance, ambulance casablanca, transport malade maroc, service ambulance privé, ambulance privée nuit casablanca, transport malade interurbain maroc"
+    "keywords": "Casa Ambulance, ambulance privée casablanca, transport médicalisé casablanca, SOS ambulance, ambulance 24h/24, transport malade maroc"
   }
 }
