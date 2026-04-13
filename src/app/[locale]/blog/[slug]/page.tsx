@@ -120,7 +120,7 @@ export async function generateMetadata({
   if (!post) return {};
 
   return {
-    title: `${post.title} | ${SITE_CONFIG.nameAr}`,
+    title: `${post.title} | ${SITE_CONFIG.name}`,
     description: post.content[0],
     openGraph: {
       title: post.title,

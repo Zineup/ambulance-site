@@ -16,8 +16,8 @@ export default function Footer({ locale }: { locale: Locale }) {
           {/* Brand & Info */}
           <div>
             <div className="flex items-center gap-2.5 mb-6 opacity-100">
-              <div className="w-10 h-10 bg-white rounded-[10px] flex items-center justify-center text-dark font-bold text-xl leading-none">
-                OK
+              <div className="w-10 h-10 bg-urgent rounded-[10px] flex items-center justify-center text-white font-bold text-sm leading-none">
+                CA
               </div>
               <span className="text-[20px] font-extrabold text-white leading-tight tracking-tight">
                 {SITE_CONFIG.name}

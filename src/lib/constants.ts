@@ -1,6 +1,6 @@
 export const SITE_CONFIG = {
-  name: "OK Ambulance",
-  nameAr: "أوكي إسعاف",
+  name: "Casa Ambulance",
+  nameAr: "كازا أمبولونس",
   phone: "+212-696-629854",
   phoneClean: "+212696629854",
   whatsapp: "+212696629854",

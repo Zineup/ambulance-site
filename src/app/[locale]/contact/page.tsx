@@ -11,10 +11,10 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const title =
     locale === "fr"
-      ? "Contactez-nous | Ambulance Maroc – Appelez maintenant"
+      ? "Contactez-nous | Casa Ambulance – Appelez maintenant"
       : locale === "en"
-      ? "Contact Us | Ambulance Morocco – Call Now"
-      : "اتصل بنا | إسعاف المغرب – عيطلنا دابا";
+      ? "Contact Us | Casa Ambulance – Call Now"
+      : "اتصل بنا | كازا أمبولونس – عيطلنا دابا";
 
   const description =
     locale === "fr"

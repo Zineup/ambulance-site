@@ -25,8 +25,8 @@ export default function HeroSection() {
 
           {/* H1 - SEO optimized - Negative tracking, extremely bold */}
           <h1 className="text-[42px] leading-[1.05] sm:text-[60px] lg:text-[80px] font-extrabold tracking-[calc(-0.04em)] mb-6 text-[#222222] mx-auto animate-in fade-in slide-in-from-bottom-6 duration-700 delay-100">
-            <span className="block text-[#ff385c] mb-2 drop-shadow-sm">OK Ambulance</span> 
-            {t("title").replace("OK Ambulance", "").trim()}
+            <span className="block text-[#ff385c] mb-2 drop-shadow-sm">Casa Ambulance</span>
+            {t("title").replace("Casa Ambulance", "").trim()}
           </h1>
 
           <p className="text-[18px] md:text-[22px] text-[#6a6a6a] mb-12 leading-[1.5] max-w-[650px] font-medium tracking-tight animate-in fade-in slide-in-from-bottom-8 duration-700 delay-200">
